@@ -5,6 +5,7 @@ html {
 body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
 }
 
 *,*::after,*::before {
@@ -12,16 +13,48 @@ body {
 }
 /* ===============(1) Header ==================== */
 #logoTop {
-    margin: 0 auto;
+    
     /* display: block; */
-    width: 50px;
+    width: 10em;
+}
+
+header ul {
+    /* margin: 0 auto; */
+    margin: 134px 0px;
+    list-style: none;
+    /* display: inline; */
+    
+}
+
+header li {
+    display: inline-block;
+    /* line-height: 2em; */
+    vertical-align: middle;
+    
+}
+
+header li a {
+    margin-left: 1em;
+    text-transform: uppercase;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+header a:hover {
+    text-decoration: underline;
+    color: blue;
 }
 
 /* ===============(/1) Header ==================== */
 
 /* ===============(2) Main ==================== */
 
-
+.imageStart {
+    margin: 0 auto;
+    
+}
 
 /* ===============(/2) Main ==================== */
 
