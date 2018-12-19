@@ -28,7 +28,6 @@ h2{
 /* ===============(1) Header ==================== */
 #logoTop {
     
-    /* display: block; */
     width: 10em;
 }
 
@@ -37,17 +36,14 @@ header div {
 }
 
 header ul {
-    /* margin: 0 auto; */
     margin: 60px 0px;
     list-style: none;
     text-align: center;
-    /* display: inline; */
     
 }
 
 header li {
     display: inline-block;
-    /* line-height: 2em; */
     vertical-align: middle;
     
 }
@@ -67,12 +63,16 @@ header a:hover {
 }
 .lign {
     position: absolute;
-    margin-top: -8em;
-    
+    margin-top: -6em;
+    height: 1.2em;
     width: 100vw;
-    /* height: ; */
     background-color: rgba(184, 3, 103, 0.459);
     color: white;
+}
+.lign h2 {
+    position: absolute;
+    margin-top: -0.2em;
+    margin-right: 0;
 }
 
 /* ===============(/1) Header ==================== */
