@@ -63,7 +63,7 @@ header a:hover {
 }
 .lignStart {
     position: absolute;
-    margin-top: -6em;
+    margin-top: -4em;
     height: 1.2em;
     width: 100vw;
     background-color: rgba(184, 3, 103, 0.459);
@@ -108,6 +108,25 @@ main p {
     margin: 5em;
     max-width: 60em;
 }
+figure div {
+    display: inline-block;
+    margin: 2em;
+}
+figure a {
+    display: block;
+    border-radius: 50%;
+}
+
+
+figure img {
+    border-radius: 50%;
+    
+}
+figure img:hover {
+    opacity: 0.5;
+}
+
+
 
 /* ===============(/2) Main ==================== */
 
