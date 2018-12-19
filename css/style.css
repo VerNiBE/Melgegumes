@@ -4,12 +4,26 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0 auto;
 }
+h1,h2,h3,h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
 
 *,*::after,*::before {
     box-sizing: inherit;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
 }
 /* ===============(1) Header ==================== */
 #logoTop {
@@ -51,10 +65,15 @@ header a:hover {
     text-decoration: underline;
     color: blue;    
 }
-/* header a:hover li {
-
-} */
-
+.lign {
+    position: absolute;
+    margin-top: -8em;
+    
+    width: 100vw;
+    /* height: ; */
+    background-color: rgba(184, 3, 103, 0.459);
+    color: white;
+}
 
 /* ===============(/1) Header ==================== */
 
@@ -66,14 +85,7 @@ header a:hover {
 }
 
 main p {
-    font-family:"Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    margin: 5em;
-    max-width: 60em;
-}
-#deux {
-    /* font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; */
-    font-family: 'Source Sans Pro', sans-serif;
+
     margin: 5em;
     max-width: 60em;
 }
