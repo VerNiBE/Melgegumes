@@ -1,3 +1,8 @@
+/* yellow : R=254 V=231 B=161 rgba(254, 231, 161, 0.5)  */
+/* red : R=137 V=88 B=100 rgba(137, 88, 100, 0.5)  */
+/* green : R=219 V=230 B=188 rgba(219, 230, 188, 0.5)  */
+
+
 html {
     font-size: 16px;
 }
@@ -83,6 +88,7 @@ header a:hover {
     margin: 0 auto;
     position: relative;
 }
+
 .imageTitle {
     margin: 0 auto;
     position: relative;
@@ -93,8 +99,8 @@ header a:hover {
     margin-top: -3.2em;
     height: 1.2em;
     width: 100vw;
-    background-color: rgba(184, 3, 103, 0.459);
-    color: white;
+    /* background-color: rgba(184, 3, 103, 0.459); */
+    /* color: white; */
 }
 
 .lignTitle h2 {
@@ -103,18 +109,43 @@ header a:hover {
     margin-right: 0;
 }
 
+.colorLignYellow{
+    background-color:rgba(254, 231, 161, 0.7);
+    color: white;
+}
+.colorLignRed{
+    background-color:rgba(137, 88, 100, 0.5);
+    color: white;
+}
+.colorLignGreen{
+    background-color:rgba(219, 230, 188, 0.5);
+    color: white;
+}
+
 main p {
 
     margin: 5em;
     max-width: 60em;
+    line-height: 1.5em;
 }
+
 figure div {
     display: inline-block;
-    margin: 2em;
+    margin: 2%;
 }
+
 figure a {
     display: block;
+    position: relative;
     border-radius: 50%;
+}
+
+figure a .productText {
+    position: absolute;
+    text-align: center;
+    top: 3.4em;
+    left: 3em;
+    margin: 0;
 }
 
 
@@ -122,6 +153,7 @@ figure img {
     border-radius: 50%;
     
 }
+
 figure img:hover {
     opacity: 0.5;
 }
