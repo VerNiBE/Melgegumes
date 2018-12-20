@@ -141,6 +141,7 @@ figure a {
 }
 
 figure a .productText {
+    display: none;
     position: absolute;
     text-align: center;
     top: 3.4em;
