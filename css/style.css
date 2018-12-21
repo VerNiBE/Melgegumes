@@ -31,6 +31,15 @@ h2{
     margin: 0 auto;
 }
 /* ===============(1) Header ==================== */
+
+.menuTop {
+    position: fixed;
+    background-color: #fff;
+    width: 100vw;
+    z-index: 100;
+    box-shadow: -1px -1px 20px black;
+}
+
 #logoTop {
     
     width: 10em;
@@ -42,6 +51,7 @@ header div {
 
 header ul {
     margin: 30px 0px;
+    padding: 0;
     list-style: none;
     text-align: center;
     
@@ -54,7 +64,8 @@ header li {
 }
 
 header li a {
-    margin-left: 3em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     text-transform: uppercase;
 }
 
@@ -149,13 +160,25 @@ figure a .productText {
     margin: 0;
 }
 
+#about #teamText {
+    float: left;
+    width: 60%;
+}
+#about #teamImage {
+    float: left;
+    margin-bottom: 2.5em;
+}
 
-figure img {
+#about #teamImage::after {
+    clear: both;
+}
+
+#product figure img,#about figure img {
     border-radius: 50%;
     
 }
 
-figure img:hover {
+#product figure img:hover {
     opacity: 0.5;
 }
 
@@ -169,3 +192,30 @@ figure img:hover {
 
 
 /* ===============(/3) Footer ==================== */
+
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    
+    html {
+        font-size: 12px;
+    }
+
+  }
+
+  @media screen and (min-width: 640px) and (max-width: 920px) {
+    
+    html {
+        font-size: 14px;
+    }
+
+  }
+
+@media print {
+    #menu, #footer, aside {
+      display:none;
+    }
+    body {
+      font-size:120%;
+      color:black;
+    }
+  }
