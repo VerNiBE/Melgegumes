@@ -190,6 +190,33 @@ figure a .productText {
 
 
 
+#bac01 {
+    width: 40px;
+    /* height: ; */
+    fill: blue;
+    stroke-width: 5px;
+    /* enable-background:new 0 0 638 525; */
+    /* margin-bottom: 200px; */
+}
+#bac02 {
+    width: 150px;
+    /* height: ; */
+    fill: orangered;
+    stroke-width: 25px;
+    /* enable-background:new 0 0 638 525; */
+    /* margin-bottom: 200px; */
+    stroke:10px black;
+}
+path.st0 {
+    /* stroke: black; */
+    stroke-width: 5px;
+}
+
+#test {
+    display: block;
+
+    margin-bottom: 200px;
+}
 
 /* ===============(/3) Footer ==================== */
 
