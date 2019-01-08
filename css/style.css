@@ -190,8 +190,8 @@ figure a .productText {
 
 
 
-#bac01 {
-    width: 40px;
+.bac01 {
+    width: 200px;
     /* height: ; */
     fill: blue;
     stroke-width: 5px;
