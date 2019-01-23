@@ -57,6 +57,10 @@ header ul {
     
 }
 
+#icon_burger {
+    display: none;
+}
+
 header li {
     display: inline-block;
     vertical-align: middle;
@@ -221,19 +225,32 @@ path.st0 {
 /* ===============(/3) Footer ==================== */
 
 
-@media screen and (min-width: 200px) and (max-width: 640px) {
+
+
+  @media screen and (max-width: 640px) and (max-width: 920px) {
+    
+    html {
+        font-size: 14px;
+    }
+    
+    #icon_burger {
+        display: block;
+        float: right;
+        text-align: center;
+    }
+
+    #menuLink {
+        display:none;
+    }
+  }
+
+  @media screen and (max-width: 320px) and (max-width: 640px) {
     
     html {
         font-size: 12px;
     }
 
-  }
 
-  @media screen and (min-width: 640px) and (max-width: 920px) {
-    
-    html {
-        font-size: 14px;
-    }
 
   }
 
@@ -246,3 +263,4 @@ path.st0 {
       color:black;
     }
   }
+
