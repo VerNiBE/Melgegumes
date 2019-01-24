@@ -2,9 +2,11 @@
 /* red : R=137 V=88 B=100 rgba(137, 88, 100, 0.5)  */
 /* green : R=219 V=230 B=188 rgba(219, 230, 188, 0.5)  */
 
+/* ===============(0) Base ==================== */
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -30,161 +32,18 @@ h2{
     width: 70%;
     margin: 0 auto;
 }
+/* ===============(/0) Base ==================== */
+
 /* ===============(1) Header ==================== */
 
-.menuTop {
-    position: fixed;
-    background-color: #fff;
-    width: 100vw;
-    z-index: 100;
-    box-shadow: -1px -1px 20px black;
-}
 
-#logoTop {
-    
-    width: 10em;
-}
 
-header div {
-    margin: auto;
-}
-
-header ul {
-    margin: 30px 0px;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    
-}
-
-#icon_burger {
-    display: none;
-}
-
-header li {
-    display: inline-block;
-    vertical-align: middle;
-    
-}
-
-header li a {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    text-transform: uppercase;
-}
-
-header a {
-    text-decoration: none;
-    color: black;
-}
-header a:hover {
-    text-decoration: underline;
-    color: blue;    
-}
-.lignStart {
-    position: absolute;
-    margin-top: -4em;
-    height: 1.2em;
-    width: 100vw;
-    background-color: rgba(184, 3, 103, 0.459);
-    color: white;
-}
-.lignStart h2 {
-    position: absolute;
-    margin-top: -0.2em;
-    margin-right: 0;
-}
 
 /* ===============(/1) Header ==================== */
 
 /* ===============(2) Main ==================== */
 
-.imageStart {
-    margin: 0 auto;
-    position: relative;
-}
 
-.imageTitle {
-    margin: 0 auto;
-    position: relative;
-}
-
-.lignTitle {
-    position: absolute;
-    margin-top: -3.2em;
-    height: 1.2em;
-    width: 100vw;
-    /* background-color: rgba(184, 3, 103, 0.459); */
-    /* color: white; */
-}
-
-.lignTitle h2 {
-    position: absolute;
-    margin-top: -0.2em;
-    margin-right: 0;
-}
-
-.colorLignYellow{
-    background-color:rgba(254, 231, 161, 0.7);
-    color: white;
-}
-.colorLignRed{
-    background-color:rgba(137, 88, 100, 0.5);
-    color: white;
-}
-.colorLignGreen{
-    background-color:rgba(219, 230, 188, 0.5);
-    color: white;
-}
-
-main p {
-
-    margin: 5em;
-    max-width: 60em;
-    line-height: 1.5em;
-}
-
-figure div {
-    display: inline-block;
-    margin: 2%;
-}
-
-figure a {
-    display: block;
-    position: relative;
-    border-radius: 50%;
-}
-
-figure a .productText {
-    display: none;
-    position: absolute;
-    text-align: center;
-    top: 3.4em;
-    left: 3em;
-    margin: 0;
-}
-
-#about #teamText {
-    float: left;
-    width: 60%;
-}
-#about #teamImage {
-    float: left;
-    margin-bottom: 2.5em;
-}
-
-#about #teamImage::after {
-    clear: both;
-}
-
-#product figure img,#about figure img {
-    border-radius: 50%;
-    
-}
-
-#product figure img:hover {
-    opacity: 0.5;
-}
 
 
 
@@ -194,73 +53,16 @@ figure a .productText {
 
 
 
-.bac01 {
-    width: 200px;
-    /* height: ; */
-    fill: blue;
-    stroke-width: 5px;
-    /* enable-background:new 0 0 638 525; */
-    /* margin-bottom: 200px; */
-}
-#bac02 {
-    width: 150px;
-    /* height: ; */
-    fill: orangered;
-    stroke-width: 25px;
-    /* enable-background:new 0 0 638 525; */
-    /* margin-bottom: 200px; */
-    stroke:10px black;
-}
-path.st0 {
-    /* stroke: black; */
-    stroke-width: 5px;
-}
 
-#test {
-    display: block;
-
-    margin-bottom: 200px;
-}
 
 /* ===============(/3) Footer ==================== */
 
+/* ===============(4) Media Queries ==================== */
 
 
 
-  @media screen and (max-width: 640px) and (max-width: 920px) {
-    
-    html {
-        font-size: 14px;
-    }
-    
-    #icon_burger {
-        display: block;
-        float: right;
-        text-align: center;
-    }
 
-    #menuLink {
-        display:none;
-    }
-  }
-
-  @media screen and (max-width: 320px) and (max-width: 640px) {
-    
-    html {
-        font-size: 12px;
-    }
+/* ===============(/4) Media Queries ==================== */
 
 
-
-  }
-
-@media print {
-    #menu, #footer, aside {
-      display:none;
-    }
-    body {
-      font-size:120%;
-      color:black;
-    }
-  }
 
