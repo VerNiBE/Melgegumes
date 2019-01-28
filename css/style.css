@@ -5,7 +5,7 @@
 /* ===============(0) Base ==================== */
 
 html {
-    font-size: 16px;
+    font-size: 18px;
     scroll-behavior: smooth;
 }
 
@@ -59,7 +59,13 @@ h2{
 
 /* ===============(4) Media Queries ==================== */
 
+@media all and (max-width:1024px) {
 
+    html {
+        font-size: 16px;
+    }
+
+}
 
 
 /* ===============(/4) Media Queries ==================== */
