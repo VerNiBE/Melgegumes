@@ -15,8 +15,14 @@ body {
     margin: 0 auto;
     margin-top: 160px; 
 }
+
+section {
+    margin: 10em 0;
+}
+
 h1,h2,h3,h4 {
     font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
 }
 
 
@@ -45,6 +51,7 @@ p {
     display: none;
 }
 
+
 /* ===============(/0) Base ==================== */
 
 /* ===============(1) Header ==================== */
@@ -57,11 +64,21 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 
 #logo {
     padding: 1em;
     width: 10em;
+}
+
+#icon_burger {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    font-size: 2em;
+    cursor: pointer;
+
 }
 
 #menuTop {
@@ -104,18 +121,79 @@ header {
 
 /* ===============(2) Main ==================== */
 
-#imageStart {
-    position: relative;
 
+
+.imageStart {
+    position: relative;
+    /* background-color: #fff; */
+    background-image: url("https://picsum.photos/1000/1000/?image=4");
+    background-size: cover;
+    background-position-y: center; 
+  background-repeat: no-repeat;
+    height: 15em;
 }
 
+.lignStart {
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    
+}
+
+.colorLignRed {
+    background-color: rgba(137, 88, 100, 1);
+}
+.colorLignYellow {
+    background-color: rgba(254, 231, 161, 1);
+}
+.colorLignGreen {
+    background-color: rgba(219, 230, 188, 1);
+}
+
+#product figure {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+
+    position: relative;
+    margin: .5em;
+}
+
+figure img{
+    width: 12.5em;
+    height: auto;
+    border-radius: 50%;
+}
+
+figure figcaption {
+    text-align: center
+}
+
+#product a {
+    color: #000;
+    text-decoration: none;
+}
 
 
 /* ===============(/2) Main ==================== */
 
 /* ===============(3) Footer ==================== */
 
+footer {
 
+    background-color: #c5c5c5;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+footer p {
+    margin: 0;
+    padding: 1em 0 2em;
+}
 
 
 
@@ -125,10 +203,14 @@ header {
 
 @media all and (min-width:768px) {
 
+    /* ===============(0) Base ==================== */
     html {
         font-size: 16px;
 
     }
+
+    /* ===============(/0) Base ==================== */
+    /* ===============(1) Header ==================== */
 
     #logo {
         width: 12em;
@@ -160,6 +242,68 @@ header {
     nav {
         display: block;
     }
+    /* ===============(/1) Header ==================== */
+
+    /* ===============(2) Main ==================== */
+
+    #product #gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #product figure {
+
+        
+        margin: 1em;
+        /* max-width: 30%; */
+        /* float: left; */
+    }
+    
+    
+    /* ===============(/2) Main ==================== */
+    /* ===============(3) Footer ==================== */
+
+
+    /* ===============(/3) Footer ==================== */
+
+}
+@media all and (min-width:1024px) {
+
+    /* ===============(0) Base ==================== */
+
+    /* ===============(/0) Base ==================== */
+    /* ===============(1) Header ==================== */
+
+    /* ===============(/1) Header ==================== */
+
+    /* ===============(2) Main ==================== */
+
+    #product figure {
+        width: 25%;
+        margin-bottom: 7em; 
+
+    }
+    
+    #product a {
+        color: #fff;
+    }
+
+    figure figcaption {
+        position: absolute;
+        top: 25%;
+        right: -50%;
+        left: -50%;
+    }
+
+
+    /* ===============(/2) Main ==================== */
+    /* ===============(3) Footer ==================== */
+
+
+    /* ===============(/3) Footer ==================== */
+
 }
 
 
