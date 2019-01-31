@@ -157,18 +157,38 @@ header {
 
 figure {
 
-    position: relative;
+    /* position: relative; */
     margin: .5em;
+    
 }
 
-figure img{
+figure .roundedImage {
+    position: relative;
     width: 12.5em;
-    height: auto;
+    height: 12.5em;
     border-radius: 50%;
+    overflow:hidden;
+    /* margin-bottom: 7em; */
 }
+
+#product figure img{
+    position: absolute;
+    top: 0;
+    right: -20%;
+    width: 165%;
+    
+    /* height: auto; */
+}
+
+
 
 figure figcaption {
-    text-align: center
+    /* position: absolute; */
+    top: 15em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    /* position: absolute; */
+    text-align: center;
 }
 
 #product a {
@@ -281,21 +301,36 @@ footer p {
     /* ===============(2) Main ==================== */
 
     #product figure {
+        position: relative;
         width: 25%;
         margin-bottom: 7em; 
 
     }
     
     #product a {
-        color: #fff;
+
+        /* color: #fff; */
+    }
+
+    #product figure .roundedImage {
+        /* position: relative; */
     }
 
     figure figcaption {
+        display: none;
         position: absolute;
         top: 25%;
         right: -50%;
         left: -50%;
     }
+    #product figure a:hover  img{
+        opacity: .5;
+    }
+
+    #product figure a:hover figcaption {
+        display: block;
+    }
+
 
 
     /* ===============(/2) Main ==================== */
