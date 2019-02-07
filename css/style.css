@@ -28,7 +28,9 @@ h1,h2,h3,h4 {
 
 
 h2{
+    font-size: 2em;
     font-weight: 300;
+    padding: .5em 0;
     text-transform: uppercase;
     color: #fff;
 }
@@ -42,10 +44,18 @@ h2{
     width: 70%;
     margin: 0 auto;
 }
-/* 
-p {
-    min-width: 60%;
-} */
+
+
+
+.columnLeft {
+    margin-left:0;
+    margin-right: auto; 
+}
+
+.columnRight {
+    margin-left: auto;
+    margin-right: 0;
+}
 
 .visible {
     display: none;
@@ -67,11 +77,6 @@ header {
     z-index: 100;
 }
 
-#logo {
-    padding: 1em;
-    width: 10em;
-}
-
 #icon_burger {
     position: absolute;
     top: 1em;
@@ -87,6 +92,11 @@ header {
     /* width: 75vw; */
     box-shadow: 0em .1em .5em #c5c5c5;
     z-index: 100;
+}
+
+#logoHeader,#logoFooter {
+    width: 8em;
+    margin: 1em;
 }
 
 /* #menuTop:hover {
@@ -116,6 +126,23 @@ header {
     text-transform: uppercase;
 }
 
+.borderLeft {
+    border-left: 2px solid;
+}
+
+.borderRight {
+    border-right: 2px solid;
+}
+
+.borderLignRed {
+    border-color: rgba(137, 88, 100, 1);
+}
+.borderLignYellow {
+    border-color: rgba(254, 231, 161, 1);
+}
+.borderLignGreen {
+    border-color: rgba(219, 230, 188, 1);
+}
 
 /* ===============(/1) Header ==================== */
 
@@ -150,6 +177,13 @@ header {
     background-color: rgba(219, 230, 188, 1);
 }
 
+#about #teamImage {
+    position: absolute;
+    top: 0;
+    right: -32%;
+    width: 150%;
+}
+
 #product figure {
     display: flex;
     justify-content: center;
@@ -182,7 +216,7 @@ figure .roundedImage {
 
 
 
-figure span {
+figure span.productText {
     /* position: absolute; */
     top: 15em;
     margin: 0 auto;
@@ -204,7 +238,6 @@ figure span {
 #product .listLegume {
     display: inline-block;
     margin: .4em .5em;
-    border-left: 3px solid rgba(219, 230, 188, 1);
     /* text-align: center; */
 }
 #product .listLegume ul {
@@ -259,11 +292,16 @@ footer p {
     padding: 1em 0 2em;
 }
 
-
-
 /* ===============(/3) Footer ==================== */
 
 /* ===============(4) Media Queries ==================== */
+@media all and (min-width:425px) {
+    .paragraph {
+        padding: 1em 0;
+        max-width:80%;
+    }
+}
+
 
 @media all and (min-width:768px) {
 
@@ -273,14 +311,13 @@ footer p {
         scroll-behavior: smooth;
     }
 
+    .paragraph {
+        padding: 1em 0;
+        max-width:60%;
+    }
+
     /* ===============(/0) Base ==================== */
     /* ===============(1) Header ==================== */
-
-    #logo {
-        width: 12em;
-        margin: 0 auto;
-        padding-bottom: 0em; 
-    }
 
     .visible {
         display: block;
@@ -306,6 +343,7 @@ footer p {
     nav {
         display: block;
     }
+
     /* ===============(/1) Header ==================== */
 
     /* ===============(2) Main ==================== */
@@ -325,6 +363,8 @@ footer p {
         /* float: left; */
     }
     
+    
+
     div .position {
         display: block;
         float: right;
@@ -343,7 +383,12 @@ footer p {
 @media all and (min-width:1024px) {
 
     /* ===============(0) Base ==================== */
-
+    
+    
+    .paragraph {
+        padding: 1em 0;
+        max-width: 40%;
+    }
     /* ===============(/0) Base ==================== */
     /* ===============(1) Header ==================== */
 
