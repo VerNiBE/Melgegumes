@@ -20,9 +20,15 @@ section {
     margin: 10em 0;
 }
 
+h1,h2,h3 {
+    padding-left: .8em ;
+}
+
 h1,h2,h3,h4 {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
+    
+
 }
 
 
@@ -45,22 +51,30 @@ h2{
     margin: 0 auto;
 }
 
-
-
 .columnLeft {
-    margin-left:0;
-    margin-right: auto; 
+    /* float: left;  */
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .columnRight {
+    /* float: right; */
     margin-left: auto;
     margin-right: 0;
+    /* text-align: end; */
+}
+
+*.columnLeft::after,*.columnRight::after {
+    /* clear: both; */
 }
 
 .visible {
     display: none;
 }
 
+.noMobile {
+    display: none;
+}
 
 /* ===============(/0) Base ==================== */
 
@@ -96,7 +110,7 @@ header {
 
 #logoHeader,#logoFooter {
     width: 8em;
-    margin: 1em;
+    margin: 1em auto;
 }
 
 /* #menuTop:hover {
@@ -128,10 +142,12 @@ header {
 
 .borderLeft {
     border-left: 2px solid;
+    padding-left: .8em ;
 }
 
 .borderRight {
     border-right: 2px solid;
+    padding-right: .6em ;
 }
 
 .borderLignRed {
@@ -153,9 +169,10 @@ header {
 .imageStart {
     position: relative;
     /* background-color: #fff; */
-    background-image: url("https://picsum.photos/1000/1000/?image=4");
+    background-image: url(../images/betterouge.jpg);
     background-size: cover;
-    background-position-y: center; 
+    /* background-position-x: left; */
+    background-position: 50% 70%; 
   background-repeat: no-repeat;
     height: 15em;
 }
@@ -224,16 +241,20 @@ figure span.productText {
     /* position: absolute; */
     text-align: center;
 }
+span.productText :nth-child(n) {
+    margin: .5em 0;
+    /* padding: .5em 0; */
+}
 
 #product a {
     color: #000;
     text-decoration: none;
 }
 
-/* #product .monthLegume{
-    margin: 0 auto;
-    text-align: center;
-} */
+.monthLeg{
+    border-top: 2px solid;
+    border-color: rgba(137, 88, 100, 1);
+}
 
 #product .listLegume {
     display: inline-block;
@@ -242,6 +263,16 @@ figure span.productText {
 }
 #product .listLegume ul {
     list-style: none;
+}
+
+.pictoLeg {
+    /* width: 200px; */
+    transform: rotate(-30deg);
+    color: aqua;
+}
+
+#carotte {
+    fill: rgba(219, 230, 188, 1);
 }
 
 div .position {
@@ -266,7 +297,7 @@ div .position {
   .button:hover{
     /* background-color: #4CAF50; Green */
     border: none;
-    border: in 1px solid #000;
+    /* border: 1px solid #000; */
     text-align: center;
     
   }
@@ -297,9 +328,10 @@ footer p {
 /* ===============(4) Media Queries ==================== */
 @media all and (min-width:425px) {
     .paragraph {
-        padding: 1em 0;
+        /* padding: 1em 0; */
         max-width:80%;
     }
+
 }
 
 
@@ -312,10 +344,45 @@ footer p {
     }
 
     .paragraph {
-        padding: 1em 0;
-        max-width:60%;
+        /* padding: 1em 0; */
+        max-width:70%;
     }
 
+    .noMobile {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+.flexWrap {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin-top: 4em;
+}
+
+.flexLeft {
+    flex: 1;
+}
+.flexRight {
+    flex: 1;
+}
+    /* .floatLeft {
+        float: left;
+    }
+
+    .floatRight {
+        float: right;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      } */
     /* ===============(/0) Base ==================== */
     /* ===============(1) Header ==================== */
 
@@ -386,8 +453,8 @@ footer p {
     
     
     .paragraph {
-        padding: 1em 0;
-        max-width: 40%;
+        /* padding: 1em 0; */
+        max-width: 60%;
     }
     /* ===============(/0) Base ==================== */
     /* ===============(1) Header ==================== */
@@ -427,6 +494,16 @@ footer p {
           width: 100%;
           background: #444;
       }
+
+    /* #colorAbout,#colorProduct {
+        background: rgba(137, 88, 100, 1);
+    }
+    #colorPoject,#colorSeller {
+        background: rgba(254, 231, 161, 1);
+    }
+    #colorActivities,# {
+        background: rgba(219, 230, 188, 1);
+    } */
 
     /* ===============(/1) Header ==================== */
 
