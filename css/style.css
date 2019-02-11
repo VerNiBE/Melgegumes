@@ -53,16 +53,10 @@ h2{
 
 .columnLeft {
     /* float: left;  */
-    margin-left: 0;
-    margin-right: auto;
+    /* max-width: 60%; */
 }
 
-.columnRight {
-    /* float: right; */
-    margin-left: auto;
-    margin-right: 0;
-    /* text-align: end; */
-}
+
 
 .visible {
     display: none;
@@ -308,7 +302,14 @@ div .position {
   }
 
 
+  iframe {
+    width: 20em;
+    height: 20em;
+  }
 
+  #socialNetwork {
+      display: inline-block;
+  }
 
 /* ===============(/2) Main ==================== */
 
@@ -326,6 +327,7 @@ footer {
 footer p {
     margin: 0;
     padding: 1em 0 2em;
+    text-align: center;
 }
 
 /* ===============(/3) Footer ==================== */
@@ -337,6 +339,16 @@ footer p {
         max-width:80%;
     }
 
+    .columnRight {
+        min-width: 50%;
+        margin-left: auto;
+        margin-right: 0; 
+    }
+    
+    .columnRight h3 {
+        text-align: end;
+        padding-right: .8em; 
+    }
 }
 
 
@@ -362,13 +374,10 @@ footer p {
         justify-content: center;
     }
 
-    section::before { 
-        display: block; 
-        content: " "; 
+    section::before {  
         margin-top: -10em; 
         height: 9em; 
-        visibility: hidden; 
-        pointer-events: none;
+
     }
 
     .flexWrap {
@@ -378,12 +387,9 @@ footer p {
         margin-top: 4em;
     }
 
-    .flexLeft {
-        flex: 1;
-    }
-
-    .flexRight {
-        flex: 1;
+    .flexPart {
+        /* margin:1em;  */
+        /* flex: 0.5; */
     }
 
     /* .floatLeft {
@@ -399,6 +405,10 @@ footer p {
         clear: both;
         display: table;
       } */
+
+      .columnRight {
+        max-width: 60%; 
+    }
     /* ===============(/0) Base ==================== */
     /* ===============(1) Header ==================== */
 
@@ -408,7 +418,7 @@ footer p {
     
 
     #menuTop ul {
-        width: 100vw;
+        width: 88vw;
         padding: 0em;
         display: flex;
         justify-content: space-around;
@@ -472,8 +482,19 @@ footer p {
         /* padding: 1em 0; */
         max-width: 60%;
     }
+
+    #menuTop {
+        display: flex;
+        align-items: flex-end;
+
+    }
+
     /* ===============(/0) Base ==================== */
     /* ===============(1) Header ==================== */
+
+    #menuTop ul {
+        margin-right:1em; 
+    }
 
     #menuTop li{
         display:inline-block;
@@ -562,7 +583,10 @@ footer p {
     
     }
 
-
+    iframe {
+        width: 25em;
+        height: 25em;
+      }
     /* ===============(/2) Main ==================== */
     /* ===============(3) Footer ==================== */
 
