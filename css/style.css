@@ -17,8 +17,10 @@ body {
 }
 
 section {
-    margin: 10em 0;
+    margin-bottom: 6em ;
 }
+
+
 
 h1,h2,h3 {
     padding-left: .8em ;
@@ -69,7 +71,7 @@ h2{
 section::before { 
     display: block; 
     content: " "; 
-    margin-top: -5em; 
+    /* margin-top: -5em;  */
     height: 5em; 
     visibility: hidden; 
     pointer-events: none;
@@ -99,9 +101,22 @@ header {
 
 }
 
+.backdrop {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+width: 100vw;
+height: 100%;
+    background-color: rgba(0,0,0,.5);
+    content: " ";
+    z-index: -99;
+}
+
 #menuTop {
     background-color: #fff;
-
+    
     /* width: 75vw; */
     box-shadow: 0em .1em .5em #c5c5c5;
     z-index: 100;
@@ -123,13 +138,15 @@ header {
 #menuTop ul {
     list-style: none;
     margin: 0 auto;
-    padding-left: 3em; 
+    padding-left: 3em;
+    
 }
 
 #menuTop ul li {
     font-size: 16px;
     padding: 1em 0;
     text-align: left;
+    
 }
 
 #menuTop ul li a{
@@ -375,8 +392,8 @@ footer p {
     }
 
     section::before {  
-        margin-top: -10em; 
-        height: 9em; 
+        /* margin-top: -8em;  */
+        height: 8em; 
 
     }
 
@@ -437,6 +454,16 @@ footer p {
         display: block;
     }
 
+    .backdrop {
+        display: none;
+        /* position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent; */
+    }
+
     /* ===============(/1) Header ==================== */
 
     /* ===============(2) Main ==================== */
@@ -486,6 +513,12 @@ footer p {
     #menuTop {
         display: flex;
         align-items: flex-end;
+
+    }
+
+    section::before {  
+        /* margin-top: -8em;  */
+        height: 5em; 
 
     }
 
