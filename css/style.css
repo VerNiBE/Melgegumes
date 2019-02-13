@@ -17,22 +17,31 @@ body {
 }
 
 section {
-    margin-bottom: 6em ;
-}
-
-
-
-h1,h2,h3 {
-    padding-left: .8em ;
+    /* margin-bottom: 6em ; */
 }
 
 h1,h2,h3,h4 {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
-    
-
 }
 
+h1,h2,h3 { 
+    padding-left: .8em ;
+}
+
+
+
+h3 {
+    margin-top: 3em;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 400;
+    padding: .5em 0;
+    text-transform: uppercase;
+    color: #fff;
+}
 
 
 h2{
@@ -53,12 +62,17 @@ h2{
     margin: 0 auto;
 }
 
-.columnLeft {
+.columnLeft p {
     /* float: left;  */
     /* max-width: 60%; */
+    line-height: 1.3em;
 }
 
-
+.columnRight p {
+    /* float: left;  */
+    /* max-width: 60%; */
+    line-height: 1.3em;
+}
 
 .visible {
     display: none;
@@ -107,8 +121,6 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-width: 100vw;
-height: 100%;
     background-color: rgba(0,0,0,.5);
     content: " ";
     z-index: -99;
@@ -185,12 +197,12 @@ height: 100%;
 .imageStart {
     position: relative;
     /* background-color: #fff; */
-    background-image: url(../images/betterouge.jpg);
+    background-image: url(../images/banner.jpg);
     background-size: cover;
     /* background-position-x: left; */
-    background-position: 50% 70%; 
+    background-position: 0% 100%; 
   background-repeat: no-repeat;
-    height: 15em;
+    height: 25em;
 }
 
 .lignStart {
@@ -212,10 +224,27 @@ height: 100%;
 
 #about #teamImage {
     position: absolute;
-    top: 0;
-    right: -32%;
-    width: 150%;
+    top: 1em;
+    right: 0;
+    left: -50%;
+
 }
+
+#project #prixImage {
+    position: absolute;
+    top: 1em;
+    right: 0;
+    left: -50%;
+
+}
+
+div .squaredImage {
+    position: relative;
+    width: 15%;
+    height: 10em;
+    overflow:hidden;
+}
+
 
 #product figure {
     display: flex;
@@ -224,7 +253,7 @@ height: 100%;
 
 figure {
 
-    /* position: relative; */
+    position: relative;
     margin: .5em;
     
 }
@@ -235,8 +264,8 @@ figure .roundedImage {
     height: 12.5em;
     border-radius: 50%;
     overflow:hidden;
-    /* margin-bottom: 7em; */
 }
+
 
 #product figure img{
     position: absolute;
@@ -358,13 +387,34 @@ footer p {
 
     .columnRight {
         min-width: 50%;
-        margin-left: auto;
+        /* margin-left: auto; */
         margin-right: 0; 
     }
     
-    .columnRight h3 {
+    .columnRight h3,.columnRight h4 {
         text-align: end;
-        padding-right: .8em; 
+        
+        
+        
+    }
+
+    .columnRight h3 {
+        padding-right: .8em;
+    }
+
+    .columnRight ul {
+        /* list-style: none; */
+        
+    }
+
+    .columnRight li {
+        display: block;
+        text-align: right;
+        /* width: 30%; */
+        text-decoration: none;
+        padding: .2em  .8em .2em 0 ;
+        margin-left: auto;
+        margin-right: 0;
     }
 }
 
@@ -426,6 +476,11 @@ footer p {
       .columnRight {
         max-width: 60%; 
     }
+    
+    h3 {
+        margin-top: 6.25em;
+    }
+
     /* ===============(/0) Base ==================== */
     /* ===============(1) Header ==================== */
 
