@@ -64,15 +64,17 @@ h2{
 }
 
 .containerGrid {
-    display: grid;
     border: 1px solid red;
+    padding: 5px;
 }
 
 .module {
+    margin: 5px;
     border: 1px solid greenyellow;
 }
 
 .box {
+    margin: 5px;
     border: 1px solid blue;
 }
 
@@ -377,14 +379,49 @@ footer p {
 
 /* ===============(4) Media Queries ==================== */
 @media all and (min-width:425px) {
-    .paragraph {
-        /* padding: 1em 0; */
+    /* .paragraph {
         max-width:80%;
+    } */
+    .moduleLeft {
+        display: grid;
+        /* border: 1px solid red; */
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            " title space "
+            " left right" ;
+        padding: 5px;
+    }
+    .moduleCenter {
+        display: grid;
+        /* border: 1px solid red; */
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            " left right" ;
+        padding: 5px;
+    }
+    .moduleRight {
+        display: grid;
+        /* border: 1px solid red; */
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            " space title"
+            " left right " ;
+        padding: 5px;
     }
 
+    .flexWrap {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        margin-top: 4em;
+    }
+
+    /* Si grid est actif enlever column si dessous */
     .columnRight {
         min-width: 50%;
-        /* margin-left: auto; */
+        
         margin-right: 0; 
     }
     
@@ -399,15 +436,10 @@ footer p {
         padding-right: .8em;
     }
 
-    .columnRight ul {
-        /* list-style: none; */
-        
-    }
 
     .columnRight li {
         display: block;
         text-align: right;
-        /* width: 30%; */
         text-decoration: none;
         padding: .2em  .8em .2em 0 ;
         margin-left: auto;
@@ -444,32 +476,7 @@ footer p {
 
     }
 
-    .flexWrap {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-evenly;
-        margin-top: 4em;
-    }
-
-    .flexPart {
-        /* margin:1em;  */
-        /* flex: 0.5; */
-    }
-
-    /* .floatLeft {
-        float: left;
-    }
-
-    .floatRight {
-        float: right;
-    }
-
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-      } */
-
+      /* Si grid est actif enlever column si dessous */
       .columnRight {
         max-width: 60%; 
     }
