@@ -238,9 +238,9 @@ header {
 }
 
 div .squaredImage {
-    width: 15%;
-    height: 10em;
+    width: 70%;
     overflow:hidden;
+    margin-top: 1.33em; 
 }
 
 
@@ -319,7 +319,8 @@ figure .productText {
 
 div .position {
     display: block;
-    margin-left: auto;
+
+    margin: 1em auto 0;
 
 }
 
@@ -327,20 +328,25 @@ div .position {
     /* background-color: #4CAF50; Green */
     border: none;
     font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
     font-weight: 700;
-    color: white;
     padding: .5em 1em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    /* font-size: 2em; */
+    color: #fff;
+    background-color: rgba(137, 88, 100, 1);
+    border: 2px solid  rgba(137, 88, 100, 1) ;
+    border-radius: 10px 10px 10px 10px;
+    
   }
   .button:hover{
-    /* background-color: #4CAF50; Green */
-    border: none;
-    /* border: 1px solid #000; */
+    color: rgba(137, 88, 100, 1);
+    background-color: #fff;
+    border: 2px solid  rgba(137, 88, 100, 1) ;
     text-align: center;
+    transition: .2s ease-in-out;
     
   }
 
@@ -377,40 +383,41 @@ footer p {
 
 /* ===============(4) Media Queries ==================== */
 @media all and (min-width:425px) {
-    /* .paragraph {
-        max-width:80%;
-    } */
+
     .moduleLeft {
         display: grid;
         /* border: 1px solid red; */
         grid-template-columns: 70% 30%;
-        grid-gap: 0em 1em;
+        grid-gap: 1em;
         /* grid-template-rows: 1fr 1fr; */
         grid-template-areas:
             " title space "
             " left right" ;
+        padding-bottom: 1em;
     }
     .moduleCenter {
         display: grid;
-        /* border: 1px solid red; */
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1em;
         grid-template-areas:
-            " left right" ;
+            "left right" ;
+        padding-bottom: 1em;
     }
     .moduleRight {
         display: grid;
         /* border: 1px solid red; */
         grid-template-columns: 30% 70%;
-        grid-gap: 1em 0em;
+        grid-gap: 1em;
         /* grid-template-rows: 1fr 1fr; */
         grid-template-areas:
             " space title"
             " left right " ;
+        padding-bottom: 1em;
     }
 
     .moduleLeft .title {
         grid-area: title;
-        justify-content:end
+        justify-content:end;
     }
 
     .moduleLeft .left {
@@ -441,7 +448,11 @@ footer p {
         grid-area: right;
     }
 
-
+    .box img {
+        align-self: center;
+        justify-self: end;
+        border: #000 5px solid;
+    }
 
     /* Si grid est actif enlever column si dessous */
     /* .columnRight {
@@ -491,11 +502,6 @@ footer p {
        
     }
 
-    .paragraph {
-        /* padding: 1em 0; */
-        max-width:70%;
-    }
-
     .noMobile {
         display: block;
     }
@@ -529,7 +535,6 @@ footer p {
         grid-template-areas:
             "title space "
             " left right " ;
-        padding: 5px;
     }
     .moduleRight {
         display: grid;
@@ -539,7 +544,6 @@ footer p {
         grid-template-areas:
             " space title"
             " left right " ;
-        padding: 5px;
     }
 
     /* ===============(/0) Base ==================== */
@@ -585,27 +589,18 @@ footer p {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #product figure {
-
-        
         margin: 1em;
         /* max-width: 30%; */
         /* float: left; */
     }
     
-    
-
-    div .position {
-        display: block;
-        float: right;
-        margin-right: 4%;
-        margin-top: -13em;
-    
+    .button {
+        font-size: 1.5em;
     }
-    
     /* ===============(/2) Main ==================== */
     /* ===============(3) Footer ==================== */
 
@@ -617,12 +612,18 @@ footer p {
 
     /* ===============(0) Base ==================== */
     
+    .container {
+        width: 70%;
+       
+    }
 
     nav {
         margin-left:2%; 
         width: -webkit-fill-available;
     }
     
+
+
 
     .flexWrap {
         display: flex;
@@ -720,10 +721,8 @@ footer p {
         display: block;
     }
 
-    div .position {
-        display: block;
-        margin: 0 auto;
-    
+    .button {
+        font-size: 2em;
     }
 
     iframe {
