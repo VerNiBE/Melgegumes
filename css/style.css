@@ -28,9 +28,9 @@ h1,h2,h3,h4 {
 
 
 
-h3 {
+/* h3 {
     margin-top: 3em;
-}
+} */
 
 h1{
     font-size: 1.2em;
@@ -236,9 +236,22 @@ header {
 .colorLignGreen {
     background-color: rgba(219, 230, 188, 1);
 }
+.colorPictoRed {
+    fill: rgba(137, 88, 100, 1);
+}
+.colorPictoYellow {
+    fill: rgba(254, 231, 161, 1);
+}
+.colorPictoGreen {
+    fill: rgb(219, 230, 188);
+}
+
+#product svg {
+    width: 80px;
+}
 
 div .squaredImage {
-    width: 70%;
+    width: 100%;
     overflow:hidden;
     margin-top: 1.33em; 
 }
@@ -300,22 +313,18 @@ figure .productText {
 }
 
 #product .listLegume {
+    font-size: 0;
     display: inline-block;
     margin: .4em .5em;
 }
 #product .listLegume ul {
+    font-size: 16px;
     list-style: none;
 }
 
-.pictoLeg {
-    /* width: 200px; */
-    transform: rotate(-30deg);
-    color: aqua;
-}
-
-#carotte {
-    fill: rgba(219, 230, 188, 1);
-}
+/* #carotte {
+    transform: rotate(45deg);
+} */
 
 div .position {
     display: block;
@@ -359,6 +368,9 @@ div .position {
   #socialNetwork {
       display: inline-block;
   }
+  #socialNetwork img {
+      width: 5em;
+  }
 
 /* ===============(/2) Main ==================== */
 
@@ -366,7 +378,7 @@ div .position {
 
 footer {
 
-    background-color: #c5c5c5;
+    background-color: rgba(137, 88, 100, .65);
 
     margin: 0;
     padding: 0;
@@ -384,75 +396,7 @@ footer p {
 /* ===============(4) Media Queries ==================== */
 @media all and (min-width:425px) {
 
-    .moduleLeft {
-        display: grid;
-        /* border: 1px solid red; */
-        grid-template-columns: 70% 30%;
-        grid-gap: 1em;
-        /* grid-template-rows: 1fr 1fr; */
-        grid-template-areas:
-            " title space "
-            " left right" ;
-        padding-bottom: 1em;
-    }
-    .moduleCenter {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-gap: 1em;
-        grid-template-areas:
-            "left right" ;
-        padding-bottom: 1em;
-    }
-    .moduleRight {
-        display: grid;
-        /* border: 1px solid red; */
-        grid-template-columns: 30% 70%;
-        grid-gap: 1em;
-        /* grid-template-rows: 1fr 1fr; */
-        grid-template-areas:
-            " space title"
-            " left right " ;
-        padding-bottom: 1em;
-    }
 
-    .moduleLeft .title {
-        grid-area: title;
-        justify-content:end;
-    }
-
-    .moduleLeft .left {
-        grid-area: left;
-    }
-
-    .moduleLeft .right {
-        grid-area: right;
-    }
-
-    .moduleCenter .left {
-        grid-area: left;
-    }
-
-    .moduleCenter .right {
-        grid-area: right;
-    }
-
-    .moduleRight .title {
-        grid-area: title;
-    }
-
-    .moduleRight .left {
-        grid-area: left;
-    }
-
-    .moduleRight .right {
-        grid-area: right;
-    }
-
-    .box img {
-        align-self: center;
-        justify-self: end;
-        border: #000 5px solid;
-    }
 
     /* Si grid est actif enlever column si dessous */
     /* .columnRight {
@@ -522,29 +466,9 @@ footer p {
         max-width: 60%; 
     }
     
-    h3 {
+    /* h3 {
         margin-top: 6.25em;
-    }
-
-
-    .moduleLeft {
-        display: grid;
-        /* border: 1px solid red; */
-        grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: 1fr 1fr; */
-        grid-template-areas:
-            "title space "
-            " left right " ;
-    }
-    .moduleRight {
-        display: grid;
-        /* border: 1px solid red; */
-        grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: 1fr 1fr; */
-        grid-template-areas:
-            " space title"
-            " left right " ;
-    }
+    } */
 
     /* ===============(/0) Base ==================== */
     /* ===============(1) Header ==================== */
@@ -584,6 +508,77 @@ footer p {
     /* ===============(/1) Header ==================== */
 
     /* ===============(2) Main ==================== */
+
+
+    .moduleLeft {
+        display: grid;
+        /* border: 1px solid red; */
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5em;
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-areas:
+            " title space "
+            " left right" ;
+        padding-bottom: 2em;
+    }
+    .moduleCenter {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        grid-column-gap: 5em;
+        grid-template-areas:
+            "left right" ;
+        padding-bottom: 2em;
+    }
+    .moduleRight {
+        display: grid;
+        /* border: 1px solid red; */
+        grid-template-columns:  1fr 1fr;
+        grid-column-gap: 5em;
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-areas:
+            " space title"
+            " left right " ;
+        padding-bottom: 2em;
+    }
+
+    .moduleLeft .title {
+        grid-area: title;
+        justify-content:end;
+    }
+
+    .moduleLeft .left {
+        grid-area: left;
+    }
+
+    .moduleLeft .right {
+        grid-area: right;
+    }
+
+    .moduleCenter .left {
+        grid-area: left;
+    }
+
+    .moduleCenter .right {
+        grid-area: right;
+    }
+
+    .moduleRight .title {
+        grid-area: title;
+    }
+
+    .moduleRight .left {
+        grid-area: left;
+    }
+
+    .moduleRight .right {
+        grid-area: right;
+    }
+
+    .box img {
+        align-self: center;
+        justify-self: end;
+        border: #000 5px solid;
+    }
 
     #product #gallery {
         display: flex;
