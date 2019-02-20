@@ -32,7 +32,7 @@ h1,h2,h3,h4 {
     margin-top: 3em;
 } */
 
-h1{
+h1,.lignSecond h2{
     font-size: 1.2em;
     font-weight: 400;
     /* padding: .5em 0; */
@@ -40,8 +40,6 @@ h1{
     color: #fff;
     margin: .5em 0 
 }
-
-
 h2{
     font-size: 2em;
     font-weight: 300;
@@ -221,12 +219,26 @@ header {
 
 .lignStart {
     position: absolute;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .2);
     bottom: 0em;
     width: 100%;
     /* transform: rotateY(180deg); */
 }
 
+.lignStart h1 {
+    margin:1em 0;
+}
+
+.lignSecond {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .2);
+    bottom: 0em;
+    width: 100%;
+    /* transform: rotateY(180deg); */
+}
+.lignSecond h2 {
+    margin: 0;
+}
 .colorLignRed {
     background-color: rgba(137, 88, 100, 1);
 }
@@ -315,11 +327,11 @@ figure .productText {
 #product .listLegume {
     font-size: 0;
     display: inline-block;
-    margin: .4em .5em;
 }
 #product .listLegume ul {
     font-size: 16px;
     list-style: none;
+    margin-right: 6em; 
 }
 
 /* #carotte {
@@ -426,7 +438,7 @@ footer p {
         margin-right: 0;
     } */
 
-    h1{
+    h1,.lignSecond h2{
         font-size: 1.7em;
     }
 }
@@ -501,7 +513,7 @@ footer p {
         display: none;
     }
 
-    h1{
+    h1.lignSecond h2{
         font-size: 2em;
     }
 
@@ -575,8 +587,7 @@ footer p {
     }
 
     .box img {
-        align-self: center;
-        justify-self: end;
+        /* margin: auto 0; */
         border: #000 5px solid;
     }
 
@@ -691,6 +702,10 @@ footer p {
         margin-bottom: 2em; 
 
     }
+
+    #product img.first {
+        margin-top: 0; 
+    }
     
     #product a {
 
@@ -731,7 +746,14 @@ footer p {
     /* ===============(/3) Footer ==================== */
 
 }
+@media all and (min-width:1300px) {
 
+    .container {
+        width: 55%;
+    }
+
+
+}
 
 /* ===============(/4) Media Queries ==================== */
 
