@@ -259,7 +259,10 @@ header {
 }
 
 #product svg {
-    width: 80px;
+    display: block;
+    width: 60px;
+    margin-left: .8em;
+    
 }
 
 div .squaredImage {
@@ -325,13 +328,12 @@ figure .productText {
 }
 
 #product .listLegume {
-    font-size: 0;
     display: inline-block;
 }
 #product .listLegume ul {
     font-size: 16px;
     list-style: none;
-    margin-right: 6em; 
+    margin-right: 7vw; 
 }
 
 /* #carotte {
@@ -604,6 +606,11 @@ footer p {
         /* float: left; */
     }
     
+    #product svg {
+        width: 80px;
+        
+    }
+
     .button {
         font-size: 1.5em;
     }
