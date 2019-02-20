@@ -329,11 +329,16 @@ figure .productText {
 
 #product .listLegume {
     display: inline-block;
+    
 }
 #product .listLegume ul {
     font-size: 16px;
     list-style: none;
     margin-right: 7vw; 
+}
+
+#product .listLegume li {
+    padding-bottom: .4em;
 }
 
 /* #carotte {
