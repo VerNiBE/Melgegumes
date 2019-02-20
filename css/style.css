@@ -213,7 +213,7 @@ header {
     background-position: bottom ;
     background-repeat: no-repeat;
     /* transform: rotateY(180deg); */
-    height: 25em;
+    height: 100vh;
 }
 
 .lignStart {
@@ -339,6 +339,11 @@ figure .productText {
 #product .listLegume li {
     padding-bottom: .4em;
 }
+
+.switchPage h4{
+text-align: end;
+}
+
 
 /* #carotte {
     transform: rotate(45deg);
