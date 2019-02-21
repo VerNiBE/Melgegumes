@@ -2,6 +2,8 @@
 /* red : R=137 V=88 B=100 rgba(137, 88, 100, 0.5)  */
 /* green : R=219 V=230 B=188 rgba(219, 230, 188, 0.5)  */
 
+/* ===============(*) One Page ==================== */
+
 /* ===============(0) Base ==================== */
 
 html {
@@ -349,9 +351,6 @@ figure .productText {
     margin-right: 0;
     width: 7.5em;
 }
-.switchPage h4:hover {
-
-}
 .switchPage h4::after {
     content: '';
     display: block;
@@ -404,12 +403,36 @@ div .position {
     
   }
 
+  #listPartner li {
+      display: inline-block;
+      margin: 2%;
+  }
+
+  #listPartner img{
+      width: 6.25em;
+  }
 
   #map {
+      margin-top: 1.8em;
       border: #000 3px solid;
       width: 18em;
       height: 18em;
   }
+    #contact li {
+        list-style: none;
+    }
+    #contact a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 2em;
+    }
+
+    #contact a:hover {
+    color: blue;
+    text-decoration: underline;
+    }
+
 
   #socialNetwork {
       display: inline-block;
@@ -441,6 +464,15 @@ footer p {
     margin: 0;
     padding: 1em 0 2em;
     text-align: center;
+}
+
+footer a {
+    color: #fff;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: blue;
 }
 
 /* ===============(/3) Footer ==================== */
@@ -803,7 +835,8 @@ footer p {
 /* ===============(/4) Media Queries ==================== */
 
 
-   /* ===============(/0) Commande Liste Legumes ==================== */
+   /* ===============(/*) One Page ==================== */
+   /* ===============(**) Commande Liste Legumes ==================== */
    aside{
        width: 100%;
        position: relative;
@@ -872,7 +905,7 @@ footer p {
   }
 
 
-
+/* ===============(/**) Commande Liste Legumes ==================== */
    
 
 
