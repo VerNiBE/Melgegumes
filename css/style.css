@@ -765,4 +765,18 @@ footer p {
 /* ===============(/4) Media Queries ==================== */
 
 
+   /* ===============(/0) Commande Liste Legumes ==================== */
+
+   @media all and (min-width:425px) {
+
+    .containerLegumes{
+        margin-left: 10%;
+        width:50%; 
+    }
+
+
+}
+
+   
+
 
