@@ -332,7 +332,25 @@ figure .productText {
 }
 
 .switchPage h4{
-text-align: end;
+    margin-left: auto;
+    margin-right: 0;
+    width: 7.5em;
+}
+.switchPage h4:hover {
+
+}
+.switchPage h4::after {
+    content: '';
+    display: block;
+    /*margin: auto;*/
+    height: 2px;
+    width: 0;
+    background: transparent;
+    /* transition: width .2s ease, background-color .2s ease; */
+}
+.switchPage h4:hover::before, .switchPage h4:hover::after {
+    width: 100%;
+    background: #444;
 }
 
 
