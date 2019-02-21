@@ -102,7 +102,6 @@ section::before {
     visibility: hidden; 
     pointer-events: none;
   }
-
 /* ===============(/0) Base ==================== */
 
 /* ===============(1) Header ==================== */
@@ -214,7 +213,7 @@ header {
     background-position: bottom ;
     background-repeat: no-repeat;
     /* transform: rotateY(180deg); */
-    height: 25em;
+    height: 100vh;
 }
 
 .lignStart {
@@ -329,12 +328,22 @@ figure .productText {
 
 #product .listLegume {
     display: inline-block;
+    
 }
 #product .listLegume ul {
     font-size: 16px;
     list-style: none;
     margin-right: 7vw; 
 }
+
+#product .listLegume li {
+    padding-bottom: .4em;
+}
+
+.switchPage h4{
+text-align: end;
+}
+
 
 /* #carotte {
     transform: rotate(45deg);
@@ -394,7 +403,7 @@ footer {
 
     background-color: rgba(137, 88, 100, .65);
     color: #fff;
-    margin: 0;
+    margin: 6em 0 0;
     padding: 0;
 
 }
