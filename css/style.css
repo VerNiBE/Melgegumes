@@ -48,6 +48,10 @@ h2{
     color: #fff;
 }
 
+h3 {
+    margin-top: 4em;
+    margin-bottom: 0;
+}
 
 *,*::after,*::before {
     box-sizing: inherit;
@@ -401,9 +405,10 @@ div .position {
   }
 
 
-  iframe {
-    width: 20em;
-    height: 20em;
+  #map {
+      border: #000 3px solid;
+      width: 18em;
+      height: 18em;
   }
 
   #socialNetwork {
@@ -411,6 +416,12 @@ div .position {
   }
   #socialNetwork img {
       width: 5em;
+     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+     filter: grayscale(100%);
+  }
+  #socialNetwork img:hover {
+     -webkit-filter: none; /* Safari 6.0 - 9.0 */
+     filter: none;
   }
 
 /* ===============(/2) Main ==================== */
@@ -793,7 +804,26 @@ footer p {
 
 
    /* ===============(/0) Commande Liste Legumes ==================== */
+   aside{
+       width: 100%;
+       position: relative;
 
+   }
+   div.formulaire{
+       background-color: #ffffff;
+       position: fixed;
+       top: 6.5em;
+       left: 0;
+       right: 0;
+       /* height: 50%; */
+       z-index: 1000;
+
+   }
+.containerPaniers{
+    line-height: 1.4em; 
+    list-style: none;
+    margin-left:15%; 
+}
    .containerLegumes{
     margin-left: 15%;
 
@@ -817,7 +847,28 @@ footer p {
         width:70%; 
     }
    }
-  @media all and(min-width:1010px){
+  @media all and (min-width:768px) {
+
+    aside{
+        width: 30%;
+        position: fixed;
+        right: 0;
+        top: 8em;
+        left: 70%;
+    }    
+
+    div.formulaire {
+        background-color: #ffffff;
+        position: absolute;
+        border:#000 1px solid; 
+        /* top: 6.5em;
+        left: 0;
+        right: 0; */
+        /* height: 50%; */
+        z-index: 1000;
+ 
+    }
+
   }
 
 
