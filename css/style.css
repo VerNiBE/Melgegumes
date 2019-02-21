@@ -775,7 +775,26 @@ footer p {
 
 
    /* ===============(/0) Commande Liste Legumes ==================== */
+   aside{
+       width: 100%;
+       position: relative;
 
+   }
+   div.formulaire{
+       background-color: #ffffff;
+       position: fixed;
+       top: 6.5em;
+       left: 0;
+       right: 0;
+       /* height: 50%; */
+       z-index: 1000;
+
+   }
+.containerPaniers{
+    line-height: 1.4em; 
+    list-style: none;
+    margin-left:15%; 
+}
    .containerLegumes{
     margin-left: 15%;
 
@@ -799,7 +818,28 @@ footer p {
         width:70%; 
     }
    }
-  @media all and(min-width:1010px){
+  @media all and (min-width:768px) {
+
+    aside{
+        width: 30%;
+        position: fixed;
+        right: 0;
+        top: 8em;
+        left: 70%;
+    }    
+
+    div.formulaire {
+        background-color: #ffffff;
+        position: absolute;
+        border:#000 1px solid; 
+        /* top: 6.5em;
+        left: 0;
+        right: 0; */
+        /* height: 50%; */
+        z-index: 1000;
+ 
+    }
+
   }
 
 
