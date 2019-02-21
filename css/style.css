@@ -25,9 +25,7 @@ h1,h2,h3,h4 {
     text-transform: uppercase;
 }
 
-p {
-    line-height: 1.3em;
-}
+
 
 
 /* h3 {
@@ -76,6 +74,17 @@ h2{
     border: 1px solid blue;
 } */
 
+.columnLeft p {
+    /* float: left;  */
+    /* max-width: 60%; */
+    line-height: 1.3em;
+}
+
+.columnRight p {
+    /* float: left;  */
+    /* max-width: 60%; */
+    line-height: 1.3em;
+}
 
 .visible {
     display: none;
@@ -723,8 +732,8 @@ footer p {
 
     #product figure {
         position: relative;
-        width: 25%;
         margin-bottom: 2em; 
+        width: 25%; 
 
     }
 
@@ -785,15 +794,33 @@ footer p {
 
    /* ===============(/0) Commande Liste Legumes ==================== */
 
+   .containerLegumes{
+    margin-left: 15%;
+
+}
+
+#galleryCommand {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
    @media all and (min-width:425px) {
+
+
+    #product #galleryCommand figure {
+        /* width: 25%; */
+    }
 
     .containerLegumes{
         margin-left: 10%;
-        width:50%; 
+        width:70%; 
     }
+   }
+  @media all and(min-width:1010px){
+  }
 
 
-}
 
    
 
