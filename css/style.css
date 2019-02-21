@@ -48,6 +48,10 @@ h2{
     color: #fff;
 }
 
+h3 {
+    margin-top: 4em;
+    margin-bottom: 0;
+}
 
 *,*::after,*::before {
     box-sizing: inherit;
@@ -383,9 +387,10 @@ div .position {
   }
 
 
-  iframe {
-    width: 20em;
-    height: 20em;
+  #map {
+      border: #000 3px solid;
+      width: 18em;
+      height: 18em;
   }
 
   #socialNetwork {
@@ -393,6 +398,12 @@ div .position {
   }
   #socialNetwork img {
       width: 5em;
+     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+     filter: grayscale(100%);
+  }
+  #socialNetwork img:hover {
+     -webkit-filter: none; /* Safari 6.0 - 9.0 */
+     filter: none;
   }
 
 /* ===============(/2) Main ==================== */
