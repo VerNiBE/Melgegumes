@@ -232,14 +232,14 @@ header {
 
 .lignStart h1 {
     margin:.5em 0;
-    font-size: 4em;
+    font-size: 3em;
     /* font-family: "raleway"; */
     font-weight: bold;
 }
 
 .buttonTop {
     position: absolute;
-    bottom: 4.5em;
+    bottom: 3.8em;
     left: 50%;
     transform: translate(-50%, -50%);
      
@@ -413,21 +413,42 @@ div .position {
     
   }
 
-  #listPartner li {
-      display: inline-block;
-      margin: 2%;
+  #listPartner ul {
+    
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+
+    list-style: none;
+      margin-top: 5em;
+      padding: 0;
   }
 
   #listPartner img{
       width: 6.25em;
+      height: 6.25em;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+   }
+   #listPartner img:hover {
+      -webkit-filter: none; /* Safari 6.0 - 9.0 */
+      filter: none;
+   }
+   #map {
+    margin: 1em 1.8em 0 0;
+       width: 19em;
+       height: 19em;
+       overflow: hidden;
+   }
+
+  #map img{
+    width: 120%;
+
   }
 
-  #map {
-      margin-top: 1.8em;
-      border: #000 3px solid;
-      width: 18em;
-      height: 18em;
-  }
+  #mapid { height: 180px; }
+
     #contact li {
         list-style: none;
     }
@@ -445,7 +466,9 @@ div .position {
 
 
   #socialNetwork {
-      display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5em;
   }
   #socialNetwork img {
       width: 5em;
@@ -603,34 +626,28 @@ footer a:hover {
 
     /* ===============(2) Main ==================== */
 
-    /* .lignStart {
+    .lignStart {
         position: absolute;
         background-color: rgba(0, 0, 0, .3);
-        top: 7em;
+        top: 12em;
         width: 100%;
     }
     
     .lignStart h1 {
-        margin:.5em 0;
-        font-size: 8vw;
+        margin:.4em 0;
+        font-size: 7em;
         font-weight: bold;
     }
     
-    .buttonTop {
-        position: absolute;
-        bottom: 4.5em;
-        left: 10%;
-        right: 10%;
-         
-    } */
+    .button.buttonTop{
+        font-size: 2em;
+    }
 
-    /* #arrowDown{
-        position: absolute;
+    .buttonTop {
         bottom: 4em;
-        left: 42%;
-        width: 3.75em;
-        fill: #fff;
-    } */
+        left: 50%;
+         
+    }
 
     .moduleLeft {
         display: grid;
@@ -696,11 +713,6 @@ footer a:hover {
         grid-area: right;
     }
 
-    .box img {
-        /* margin: auto 0; */
-        border: #000 5px solid;
-    }
-
     #product #gallery {
         display: flex;
         flex-direction: row;
@@ -740,7 +752,8 @@ footer a:hover {
 
     nav {
         margin-left:2%; 
-        width: -webkit-fill-available;
+        width: -webkit-fill-available; /*(chrome)*/
+        width: -moz-available; /*(firefox)*/
     }
     
 
@@ -810,6 +823,37 @@ footer a:hover {
     /* ===============(/1) Header ==================== */
 
     /* ===============(2) Main ==================== */
+
+    .lignStart {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .3);
+        top: 12em;
+        width: 100%;
+    }
+    
+    .lignStart h1 {
+        margin:.2em 0;
+        font-size: 6em;
+        /* font-family: "raleway"; */
+        font-weight: bold;
+    }
+    
+    .buttonTop {
+        /* position: absolute; */
+        bottom: 15.7em;
+        left: 70.7%;
+        transform: translate(-50%, -50%);
+         
+    }
+    
+    #arrowDown{
+        position: absolute;
+        bottom: 4em;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 3.75em;
+        fill: #fff;
+    }
 
     #product figure {
         position: relative;
