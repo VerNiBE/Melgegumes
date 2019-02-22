@@ -224,27 +224,36 @@ header {
 
 .lignStart {
     position: absolute;
-    background-color: rgba(0, 0, 0, .4);
-    bottom: 20em;
+    background-color: rgba(0, 0, 0, .3);
+    top: 7em;
     width: 100%;
     /* transform: rotateY(180deg); */
 }
 
 .lignStart h1 {
-    margin:1em 0;
-    font-size: 3em;
+    margin:.5em 0;
+    font-size: 4em;
+    /* font-family: "raleway"; */
+    font-weight: bold;
 }
 
-.lignSecond {
+.buttonTop {
     position: absolute;
-    background-color: rgba(0, 0, 0, .2);
-    bottom: 0em;
-    width: 100%;
-    /* transform: rotateY(180deg); */
+    bottom: 4.5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     
 }
-.lignSecond h2 {
-    margin: 0;
+
+#arrowDown{
+    position: absolute;
+    bottom: 4em;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 3.75em;
+    fill: #fff;
 }
+
 .colorLignRed {
     background-color: rgba(137, 88, 100, 1);
 }
@@ -258,10 +267,10 @@ header {
     fill: rgba(137, 88, 100, 1);
 }
 .colorPictoYellow {
-    fill: rgba(254, 231, 161, 1);
+    fill: rgb(255, 191, 0);
 }
 .colorPictoGreen {
-    fill: rgb(219, 230, 188);
+    fill: rgb(165, 224, 0);
 }
 
 #product svg {
@@ -382,7 +391,7 @@ div .position {
     /* background-color: #4CAF50; Green */
     border: none;
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: 700;
     padding: .5em 1em;
     text-align: center;
@@ -594,6 +603,34 @@ footer a:hover {
 
     /* ===============(2) Main ==================== */
 
+    /* .lignStart {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .3);
+        top: 7em;
+        width: 100%;
+    }
+    
+    .lignStart h1 {
+        margin:.5em 0;
+        font-size: 8vw;
+        font-weight: bold;
+    }
+    
+    .buttonTop {
+        position: absolute;
+        bottom: 4.5em;
+        left: 10%;
+        right: 10%;
+         
+    } */
+
+    /* #arrowDown{
+        position: absolute;
+        bottom: 4em;
+        left: 42%;
+        width: 3.75em;
+        fill: #fff;
+    } */
 
     .moduleLeft {
         display: grid;
