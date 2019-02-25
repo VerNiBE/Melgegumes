@@ -653,31 +653,31 @@ footer a:hover {
         display: grid;
         /* border: 1px solid red; */
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 5em;
+        grid-column-gap: 3em;
         /* grid-template-rows: 1fr 1fr; */
         grid-template-areas:
-            " title space "
+            " title title "
             " left right" ;
-        padding-bottom: 2em;
+        padding-bottom: 4em;
     }
     .moduleCenter {
         display: grid;
         grid-template-columns:  1fr 1fr;
-        grid-column-gap: 5em;
+        grid-column-gap: 3em;
         grid-template-areas:
             "left right" ;
-        padding-bottom: 2em;
+        padding-bottom: 4em;
     }
     .moduleRight {
         display: grid;
         /* border: 1px solid red; */
         grid-template-columns:  1fr 1fr;
-        grid-column-gap: 5em;
+        grid-column-gap: 3em;
         /* grid-template-rows: 1fr 1fr; */
         grid-template-areas:
-            " space title"
+            " title title"
             " left right " ;
-        padding-bottom: 2em;
+        padding-bottom: 4em;
     }
 
     .moduleLeft .title {
@@ -703,6 +703,8 @@ footer a:hover {
 
     .moduleRight .title {
         grid-area: title;
+        grid-column: 2 / span 1;
+  /* grid-row: third-line / 4; */
     }
 
     .moduleRight .left {
@@ -746,7 +748,7 @@ footer a:hover {
     /* ===============(0) Base ==================== */
     
     .container {
-        width: 70%;
+        max-width: 65em;
        
     }
 
@@ -907,9 +909,9 @@ footer a:hover {
 }
 @media all and (min-width:1300px) {
 
-    .container {
-        width: 55%;
-    }
+    /* .container {
+        max-width: 65em;
+    } */
 
 
 }
