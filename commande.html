@@ -40,7 +40,8 @@
 	<main>
 
 			<aside>
-					<div class="formulaire borderLeft borderLignRed">
+					<div id="basket"><img src="images/picto_svg/Panier.svg" alt="Panier de legume avec interaction"></div>
+					<div class="formulaire borderLeft borderLignRed visible">
 						<form method="post">
 							<p>
 								<label for="name">Nom :</label><br />
@@ -64,15 +65,17 @@
 			<div class="lignTitle colorLignRed">
 				<div class="container">
 					<h2>Commande</h2>
-
 				</div>
 			</div>
+
 			<div class="containerPaniers">
-				<h3>Nos légumes</h3>
-				<li>Petit Panier</li>
-				<li>Panier Moyen</li>
-				<li>Grand Panier</li>
-				<li>Panier personnalisable</li>
+	
+					<h3>Nos légumes</h3>
+					 <p> Petit Panier </p><input type="radio" name="Panier" id="small" checked>
+					 <p> Panier Moyen </p><input type="radio" name="Panier" id="normal">
+					 <p> Grand Panier </p><input type="radio" name="Panier" id="big">
+					 <p> Panier personnalisable </p><input type="radio" name="Panier" id="random">
+					
 			</div>
 			<div class="containerLegumes">
 				<div id="galleryCommand">
@@ -86,6 +89,7 @@
 							<div class="productText">
 								<h4>Persil</h4>
 								<p>1,50€ / bouquet</p>
+								
 							</div>
 						</a>
 					</figure>

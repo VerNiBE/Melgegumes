@@ -20,10 +20,12 @@ window.onload = function () {
         document.getElementById("nav").classList.toggle("visible");
         document.getElementById("backdrop").classList.toggle("visible");
         console.log(document.getElementById("icon_burger").display=="none");
+    
+    });
 
+    document.getElementById("backdropForm").addEventListener('click',function(){
 
-});
+        document.getElementById("backdropForm").classList.toggle("visible");
 
-
-
+    });
 }

@@ -332,7 +332,7 @@ figure .productText {
     /* padding: .5em 0; */
 }
 
-#product a {
+#product #gallery a,#galleryCommand a {
     color: #000;
     text-decoration: none;
 }
@@ -933,9 +933,25 @@ footer a:hover {
     list-style: none;
     margin-left:15%; 
 }
-   .containerLegumes{
+.containerLegumes{
     margin-left: 15%;
 
+}
+
+#basket img {
+    position: absolute;
+    top: 12em;
+    right: 9%;
+    width: 3em;
+    box-sizing: initial;
+    padding: .5em;
+    background-color: rgba(137, 88, 100, 1);
+    border:rgba(137, 88, 100, 1) 2px solid;
+    border-radius: 30%;
+}
+
+#basket img:hover {
+    background-color:#fff;
 }
 
 #galleryCommand {
@@ -962,18 +978,26 @@ footer a:hover {
         width: 30%;
         position: fixed;
         right: 0;
-        top: 8em;
+        top: 10em;
         left: 70%;
     }    
+    div#basket {
+        background-color: #333;
+        position: absolute;
+        top: 1.2em;
+        left: 0;
+        right: 0;
+    }
+
+
 
     div.formulaire {
-        background-color: #ffffff;
+        /* display: none; */
+        background-color: #999;
         position: absolute;
-        /* top: 6.5em;
+        top: 6.5em;
         left: 0;
-        right: 0; */
-        /* height: 50%; */
-        z-index: 1000;
+        right: 0;
         
     }
 
