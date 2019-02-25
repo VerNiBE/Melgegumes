@@ -907,14 +907,6 @@ footer a:hover {
     /* ===============(/3) Footer ==================== */
 
 }
-@media all and (min-width:1300px) {
-
-    /* .container {
-        max-width: 65em;
-    } */
-
-
-}
 
 /* ===============(/4) Media Queries ==================== */
 
@@ -977,13 +969,12 @@ footer a:hover {
     div.formulaire {
         background-color: #ffffff;
         position: absolute;
-        border:#000 1px solid; 
         /* top: 6.5em;
         left: 0;
         right: 0; */
         /* height: 50%; */
         z-index: 1000;
- 
+        
     }
 
   }
