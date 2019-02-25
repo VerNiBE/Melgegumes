@@ -913,45 +913,60 @@ footer a:hover {
 
    /* ===============(/*) One Page ==================== */
    /* ===============(**) Commande Liste Legumes ==================== */
-   aside{
+aside {
        width: 100%;
        position: relative;
 
    }
-   div.formulaire{
+
+   .backdropForm {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    content: " ";
+    z-index: 2;
+}
+
+div.formulaire {
        background-color: #ffffff;
        position: fixed;
-       top: 6.5em;
+       top: 6.8em;
        left: 0;
        right: 0;
-       /* height: 50%; */
-       z-index: 1000;
+       z-index: 3;
 
+       padding-bottom:.8em; 
    }
-.containerPaniers{
+.containerPaniers {
     line-height: 1.4em; 
     list-style: none;
     margin-left:15%; 
 }
-.containerLegumes{
+.containerLegumes {
     margin-left: 15%;
 
 }
 
-#basket img {
-    position: absolute;
-    top: 12em;
+#basket svg {
+    position: fixed;
+    top: 8em;
     right: 9%;
     width: 3em;
     box-sizing: initial;
     padding: .5em;
+    fill: #fff;
     background-color: rgba(137, 88, 100, 1);
-    border:rgba(137, 88, 100, 1) 2px solid;
+    border:white 2px solid;
     border-radius: 30%;
+    z-index: 10;
 }
 
 #basket img:hover {
     background-color:#fff;
+    border:rgba(137, 88, 100, 1) 2px solid;
 }
 
 #galleryCommand {
@@ -967,14 +982,14 @@ footer a:hover {
         /* width: 25%; */
     }
 
-    .containerLegumes{
+    .containerLegumes {
         margin-left: 10%;
         width:70%; 
     }
    }
   @media all and (min-width:768px) {
 
-    aside{
+    aside {
         width: 30%;
         position: fixed;
         right: 0;
