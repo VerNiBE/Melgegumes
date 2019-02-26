@@ -343,6 +343,11 @@ figure .productText {
     padding-bottom: .4em;
 }
 
+.switchPage a {
+    text-decoration: none;
+    color: #000;
+}
+
 .switchPage h4{
     margin-left: auto;
     margin-right: 0;
@@ -357,7 +362,7 @@ figure .productText {
     background: transparent;
     /* transition: width .2s ease, background-color .2s ease; */
 }
-.switchPage h4:hover::before, .switchPage h4:hover::after {
+.switchPage h4:hover::after {
     width: 100%;
     background: #444;
 }
