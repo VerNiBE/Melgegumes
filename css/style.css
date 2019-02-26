@@ -374,14 +374,12 @@ figure .productText {
 
 div .position {
     display: block;
-
+    width: 30%;
     margin: 1em auto 0;
 
 }
 
 .button {
-    /* background-color: #4CAF50; Green */
-    border: none;
     font-family: 'Quicksand', sans-serif;
     font-size: 2em;
     font-weight: 700;
@@ -419,7 +417,7 @@ div .position {
 
   #listPartner img{
       width: 6.25em;
-      height: 6.25em;
+      margin: 1em;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
    }
@@ -429,8 +427,8 @@ div .position {
    }
    #map {
     margin: 1em 1.8em 0 0;
-       width: 19em;
-       height: 19em;
+       width: 18em;
+       height: 18em;
        overflow: hidden;
    }
 
@@ -498,6 +496,11 @@ footer a {
 
 footer a:hover {
     color: blue;
+}
+
+footer .logo {
+    display: flex;
+    justify-content: center;
 }
 
 /* ===============(/3) Footer ==================== */
@@ -932,11 +935,28 @@ div.formulaire {
 
        padding-bottom:.8em; 
    }
+
+   #nom,#mail,#commande {
+       border: rgba(137, 88, 100, 1) 1px solid; 
+   }
+
 .containerPaniers {
     line-height: 1.4em; 
     list-style: none;
     margin-left:15%; 
 }
+
+.containerPaniers ul {
+    width: 80%;
+    list-style: none;
+    padding: 0;
+}
+
+.containerPaniers li {
+    display: flex;
+    justify-content: space-between;
+}
+
 .containerLegumes {
     margin-left: 15%;
 
@@ -968,11 +988,6 @@ div.formulaire {
 }
 
    @media all and (min-width:425px) {
-
-
-    #product #galleryCommand figure {
-        /* width: 25%; */
-    }
 
     .containerLegumes {
         margin-left: 10%;
