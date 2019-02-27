@@ -41,7 +41,7 @@
 
 			<aside>
 					<!-- <div id="basket"><img src="images/picto_svg/Panier.svg" alt="Panier de legume avec interaction"></div> -->
-					<div id="basket"><svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					<div id="basket"><svg version="1.1" id="panier" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						viewBox="0 0 200 200" xml:space="preserve">
 				   
 				   <path d="M210.5,90.5"/>
@@ -379,7 +379,7 @@
 								<label for="commande">Commande :</label><br />
 								<textarea name="commande" id="commande" cols="30" rows="10"></textarea>
 							</p>
-							<input type="button" value="Envoyer" id="submit" class="button ">
+							<input type="button" value="Envoyer" id="submit" class="button">
 						</form>
 					</div>
 					<span class="backdropForm visible" id="backdropForm"></span>
@@ -394,22 +394,23 @@
 
 			<div class="containerPaniers">
 	
-					<h3>Nos légumes</h3>
-					<ul>
-						<li><label for="small">Petit panier</label><input type="radio" name="Panier" id="small" checked></li>
-						<li><label for="normal">Panier moyen</label><input type="radio" name="Panier" id="normal"></li>
-						<li><label for="big">Grand panier</label><input type="radio" name="Panier" id="big"></li>
-						<li><label for="random">Panier personalisable</label><input type="radio" name="Panier" id="random"></li>
+					<h3>Désirez-vous un panier ?</h3>
+					<ul class="borderLeft borderLignRed">
+						<li><label for="small">Petit panier</label><label for="name" class="prix">20 €</label><input type="radio" name="Panier" id="small" checked></li>
+						<li><label for="normal">Panier moyen</label><label for="name" class="prix">25 €</label><input type="radio" name="Panier" id="normal"></li>
+						<li><label for="big">Grand panier</label><label for="name" class="prix">35 €</label><input type="radio" name="Panier" id="big"></li>
+						<li><label for="random">Panier personnalisable</label><input type="radio" name="Panier" id="random"></li>
 					</ul>
 					
 			</div>
 			<div class="containerLegumes">
+					<h3>Nos légumes</h3>
 				<div id="galleryCommand">
 
 					<figure>
 
 						<a href="#">
-							<div class="roundedImage noMobile">
+							<div class="roundedImage">
 								<img src="images/persil.jpg" alt="bouquet de persil">
 							</div>
 							<div class="productText">
@@ -422,7 +423,7 @@
 					<figure>
 
 						<a href="#">
-							<div class="roundedImage noMobile">
+							<div class="roundedImage">
 								<img src="images/potimaron.jpg" alt="petit potimaron">
 							</div>
 							<div class="productText">
@@ -434,7 +435,7 @@
 					<figure>
 
 						<a href="#">
-							<div class="roundedImage noMobile">
+							<div class="roundedImage">
 								<img src="images/brocoli.jpg" alt="brocoli vu de haut">
 							</div>
 							<div class="productText">
@@ -446,7 +447,7 @@
 					<figure>
 
 						<a href="#">
-							<div class="roundedImage noMobile">
+							<div class="roundedImage">
 								<img src="images/moutarde.jpg" alt="plant de moutarde en fleur">
 							</div>
 							<div class="productText">
@@ -458,7 +459,7 @@
 					<figure>
 
 						<a href="#">
-							<div class="roundedImage noMobile">
+							<div class="roundedImage">
 								<img src="images/navet.jpg" alt="navet couvert partiellement de terre">
 							</div>
 							<div class="productText">
@@ -470,7 +471,7 @@
 					<figure>
 
 						<a href="#">
-							<div class="roundedImage noMobile">
+							<div class="roundedImage">
 								<img src="images/betterouge.jpg" alt="feuilles de bette rouge">
 							</div>
 							<div class="productText">
@@ -482,7 +483,7 @@
 					<figure>
 
 						<a href="#">
-							<div class="roundedImage noMobile">
+							<div class="roundedImage">
 								<img src="images/salade.jpg" alt="feuilles de salade">
 							</div>
 							<div class="productText">
@@ -494,7 +495,7 @@
 					<figure>
 
 						<a href="#">
-							<div class="roundedImage noMobile">
+							<div class="roundedImage">
 								<img src="images/poireau.jpg" alt="tête de poireaux">
 							</div>
 							<div class="productText">
@@ -506,7 +507,7 @@
 					<figure>
 
 						<a href="#">
-							<div class="roundedImage noMobile">
+							<div class="roundedImage">
 								<img src="images/sauge.jpg" alt="plant de sauge">
 							</div>
 							<div class="productText">
