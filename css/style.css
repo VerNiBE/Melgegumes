@@ -915,7 +915,7 @@ footer .logo {
    /* ===============(**) Commande Liste Legumes ==================== */
     .containerLegumes figure .productText {
         margin-bottom: 2em;
-        text-align: left;
+        text-align: center;
     }
 
 
@@ -1036,10 +1036,13 @@ div.formulaire {
 
     div.formulaire {
         position: absolute;
-        top: 5.8em;
+        top: 4.2em;
         left: 0;
         right: 0;
         
+    }
+    #formulaire .button{
+        font-size: 1.3em; 
     }
 
     @media all and (min-width:1024px) {
