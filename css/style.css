@@ -943,13 +943,13 @@ div.formulaire {
 .containerPaniers {
     line-height: 1.4em; 
     list-style: none;
-    margin-left:15%; 
+    margin-left:10%; 
 }
 
 .containerPaniers ul {
-    width: 80%;
+    position: relative;
+    width: 15em;
     list-style: none;
-    padding: 0;
 }
 
 .containerPaniers li {
@@ -985,8 +985,13 @@ div.formulaire {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 87%; 
 }
-
+.prix {
+    position: absolute;
+    left: 11em;
+}
    @media all and (min-width:425px) {
 
     .containerLegumes {
@@ -1026,9 +1031,12 @@ div.formulaire {
         
     }
 
-  }
-
-
+    @media all and (min-width:1024px) {
+        #galleryCommand {
+            width: 82%; 
+    }    
+}
+}
 /* ===============(/**) Commande Liste Legumes ==================== */
    
 
