@@ -90,7 +90,7 @@ h3 {
 section::before { 
     display: block; 
     content: " "; 
-    /* margin-top: -5em;  */
+    margin-top: -3em; 
     height: 5em; 
     visibility: hidden; 
     pointer-events: none;
@@ -840,13 +840,6 @@ footer .logo {
         font-weight: bold;
     }
     
-    .buttonTop {
-        /* position: absolute; */
-        bottom: 15.7em;
-        left: 70.7%;
-        transform: translate(-50%, -50%);
-         
-    }
     
     #arrowDown{
         position: absolute;
