@@ -8,8 +8,6 @@ window.onload = function () {
 
                 document.getElementById("nav").classList.toggle("visible");
                 document.getElementById("backdrop").classList.toggle("visible");
-
-                // console.log(document.getElementById("icon_burger").display=="none");
     
     });
     
@@ -18,10 +16,17 @@ window.onload = function () {
         
 
         document.getElementById("nav").classList.toggle("visible");
-        document.getElementById("backdrop").classList.toggle("visible");
-        // console.log(document.getElementById("icon_burger").display=="none");
-    
+        document.getElementById("backdrop").classList.toggle("visible");    
     });
+
+    document.getElementsByClassName("linksMenu").addEventListener('click',function(){
+
+        
+
+        document.getElementById("nav").classList.toggle("visible");
+        document.getElementById("backdrop").classList.toggle("visible");
+
+});
 
     document.getElementById("basket").addEventListener('click',function(){
 
@@ -36,4 +41,6 @@ window.onload = function () {
         document.getElementById("backdropForm").classList.toggle("visible");
 
     });
+
+
 }
