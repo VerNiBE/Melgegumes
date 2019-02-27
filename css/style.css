@@ -83,9 +83,9 @@ h3 {
     display: none;
 }
 
-.noMobile {
+/* .noMobile {
     display: none;
-}
+} */
 
 section::before { 
     display: block; 
@@ -374,7 +374,7 @@ figure .productText {
 
 div .position {
     display: block;
-    width: 30%;
+    width: 90%;
     margin: 1em auto 0;
 
 }
@@ -634,6 +634,11 @@ footer .logo {
         font-weight: bold;
     }
     
+    div .position {
+        width: 30%;
+    
+    }
+
     .button.buttonTop{
         font-size: 2em;
     }
@@ -908,7 +913,13 @@ footer .logo {
 
    /* ===============(/*) One Page ==================== */
    /* ===============(**) Commande Liste Legumes ==================== */
-aside {
+    .containerLegumes figure .productText {
+        margin-bottom: 2em;
+        text-align: left;
+    }
+
+
+    aside {
        width: 100%;
        position: relative;
 
