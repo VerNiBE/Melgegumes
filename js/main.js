@@ -1,4 +1,4 @@
-window.onload = function () {        
+document.addEventListener("DOMContentLoaded", function() {        
 
     //Script activation du menu burger.
     
@@ -54,7 +54,7 @@ window.onload = function () {
 
     // Liste de choix des paniers
 
-    document.getElementById("random").addEventListener('click',function(e){
+    document.getElementById("random").addEventListener('click',function(){
 
         document.getElementById("containerLegumes").classList.remove("invisible");
         document.getElementById("footer").classList.remove("marginSpace");
@@ -62,25 +62,25 @@ window.onload = function () {
         
     });
 
-    document.getElementById("big").addEventListener('click',function(e){
+    document.getElementById("big").addEventListener('click',function(){
 
         document.getElementById("containerLegumes").classList.add("invisible");
         document.getElementById("footer").classList.add("marginSpace");
         console.log("checked-big");
     });
 
-    document.getElementById("normal").addEventListener('click',function(e){
+    document.getElementById("normal").addEventListener('click',function(){
 
         document.getElementById("containerLegumes").classList.add("invisible");
         document.getElementById("footer").classList.add("marginSpace");
         console.log("checked-normal");
     });
 
-    document.getElementById("small").addEventListener('click',function(e){
+    document.getElementById("small").addEventListener('click',function(){
 
         document.getElementById("containerLegumes").classList.add("invisible");
         document.getElementById("footer").classList.add("marginSpace");
         console.log("checked-small");
     });
 
-}
+});
