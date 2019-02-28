@@ -930,6 +930,10 @@ footer .logo {
         text-align: center;
     }
 
+    svg#arrowLeg {
+        width: .2em;
+
+    }
 
     aside {
        width: 100%;
@@ -978,7 +982,11 @@ div.formulaire {
 .containerPaniers li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    line-height: 3em;
 }
+
+
 
 #basket svg {
     position: fixed;
@@ -1010,6 +1018,12 @@ div.formulaire {
     position: absolute;
     left: 11em;
 }
+
+#footer {
+    position: relative;
+    z-index: 100000;
+}
+
    @media all and (min-width:425px) {
 
     .containerLegumes {
