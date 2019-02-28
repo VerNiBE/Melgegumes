@@ -385,144 +385,146 @@
 					<span class="backdropForm visible" id="backdropForm"></span>
 				</aside>
 
-		<section id="product">
+		<section id="product" class="first">
 			<div class="lignTitle colorLignRed">
 				<div class="container">
 					<h2>Commande</h2>
 				</div>
 			</div>
 
-			<div class="containerPaniers">
+			<div class="container">
+				<div class="containerPaniers">
+		
+						<h3>Quel type de panier désirez-vous ?</h3>
+						<ul class="borderLeft borderLignRed">
+							<li><label for="small">Petit panier</label><label for="name" class="prix">20 €</label><input type="radio" name="panier" id="small" checked></li>
+							<li><label for="normal">Panier moyen</label><label for="name" class="prix">25 €</label><input type="radio" name="panier" id="normal"></li>
+							<li><label for="big">Grand panier</label><label for="name" class="prix">35 €</label><input type="radio" name="panier" id="big"></li>
+							<li><label for="random">Panier personnalisable</label><input type="radio" name="panier" id="random"></li>
+						</ul>
+						
+				</div>
+				<div class="containerLegumes invisible" id="containerLegumes">
+						<h3>Quels légumes souhaitez-vous ?</h3>
+					<div id="galleryCommand">
 	
-					<h3>Quel type de panier désirez-vous ?</h3>
-					<ul class="borderLeft borderLignRed">
-						<li><label for="small">Petit panier</label><label for="name" class="prix">20 €</label><input type="radio" name="Panier" id="small" checked></li>
-						<li><label for="normal">Panier moyen</label><label for="name" class="prix">25 €</label><input type="radio" name="Panier" id="normal"></li>
-						<li><label for="big">Grand panier</label><label for="name" class="prix">35 €</label><input type="radio" name="Panier" id="big"></li>
-						<li><label for="random">Panier personnalisable</label><input type="radio" name="Panier" id="random"></li>
-					</ul>
-					
-			</div>
-			<div class="containerLegumes">
-					<h3>Quels légumes souhaitez-vous ?</h3>
-				<div id="galleryCommand">
-
-					<figure>
-
-						<a href="#">
-							<div class="roundedImage">
-								<img src="images/persil.jpg" alt="bouquet de persil">
-							</div>
-							<div class="productText">
-								<h4>Persil</h4>
-								<p>1,50€ / bouquet</p>
-								
-							</div>
-						</a>
-					</figure>
-					<figure>
-
-						<a href="#">
-							<div class="roundedImage">
-								<img src="images/potimaron.jpg" alt="petit potimaron">
-							</div>
-							<div class="productText">
-								<h4>Potimarron</h4>
-								<p>2,70€ / kilo</p>
-							</div>
-						</a>
-					</figure>
-					<figure>
-
-						<a href="#">
-							<div class="roundedImage">
-								<img src="images/brocoli.jpg" alt="brocoli vu de haut">
-							</div>
-							<div class="productText">
-								<h4>Brocoli</h4>
-								<p>4,50€ / pièce</p>
-							</div>
-						</a>
-					</figure>
-					<figure>
-
-						<a href="#">
-							<div class="roundedImage">
-								<img src="images/moutarde.jpg" alt="plant de moutarde en fleur">
-							</div>
-							<div class="productText">
-								<h4>Moutarde</h4>
-								<p>1,50€ / bouquet</p>
-							</div>
-						</a>
-					</figure>
-					<figure>
-
-						<a href="#">
-							<div class="roundedImage">
-								<img src="images/navet.jpg" alt="navet couvert partiellement de terre">
-							</div>
-							<div class="productText">
-								<h4>Navets</h4>
-								<p>3€ / kilo</p>
-							</div>
-						</a>
-					</figure>
-					<figure>
-
-						<a href="#">
-							<div class="roundedImage">
-								<img src="images/betterouge.jpg" alt="feuilles de bette rouge">
-							</div>
-							<div class="productText">
-								<h4>Bette rouge</h4>
-								<p>2,70€ / pièce</p>
-							</div>
-						</a>
-					</figure>
-					<figure>
-
-						<a href="#">
-							<div class="roundedImage">
-								<img src="images/salade.jpg" alt="feuilles de salade">
-							</div>
-							<div class="productText">
-								<h4>Salade</h4>
-								<p>2€ / pièce</p>
-							</div>
-						</a>
-					</figure>
-					<figure>
-
-						<a href="#">
-							<div class="roundedImage">
-								<img src="images/poireau.jpg" alt="tête de poireaux">
-							</div>
-							<div class="productText">
-								<h4>Poireaux</h4>
-								<p>3€ / botte</p>
-							</div>
-						</a>
-					</figure>
-					<figure>
-
-						<a href="#">
-							<div class="roundedImage">
-								<img src="images/sauge.jpg" alt="plant de sauge">
-							</div>
-							<div class="productText">
-								<h4>Sauge</h4>
-								<p>2,70€ / bouquet</p>
-							</div>
-						</a>
-					</figure>
+						<figure>
+	
+							<a href="#">
+								<div class="roundedImage">
+									<img src="images/persil.jpg" alt="bouquet de persil">
+								</div>
+								<div class="productText">
+									<h4>Persil</h4>
+									<p>1,50€ / bouquet</p>
+									
+								</div>
+							</a>
+						</figure>
+						<figure>
+	
+							<a href="#">
+								<div class="roundedImage">
+									<img src="images/potimaron.jpg" alt="petit potimaron">
+								</div>
+								<div class="productText">
+									<h4>Potimarron</h4>
+									<p>2,70€ / kilo</p>
+								</div>
+							</a>
+						</figure>
+						<figure>
+	
+							<a href="#">
+								<div class="roundedImage">
+									<img src="images/brocoli.jpg" alt="brocoli vu de haut">
+								</div>
+								<div class="productText">
+									<h4>Brocoli</h4>
+									<p>4,50€ / pièce</p>
+								</div>
+							</a>
+						</figure>
+						<figure>
+	
+							<a href="#">
+								<div class="roundedImage">
+									<img src="images/moutarde.jpg" alt="plant de moutarde en fleur">
+								</div>
+								<div class="productText">
+									<h4>Moutarde</h4>
+									<p>1,50€ / bouquet</p>
+								</div>
+							</a>
+						</figure>
+						<figure>
+	
+							<a href="#">
+								<div class="roundedImage">
+									<img src="images/navet.jpg" alt="navet couvert partiellement de terre">
+								</div>
+								<div class="productText">
+									<h4>Navets</h4>
+									<p>3€ / kilo</p>
+								</div>
+							</a>
+						</figure>
+						<figure>
+	
+							<a href="#">
+								<div class="roundedImage">
+									<img src="images/betterouge.jpg" alt="feuilles de bette rouge">
+								</div>
+								<div class="productText">
+									<h4>Bette rouge</h4>
+									<p>2,70€ / pièce</p>
+								</div>
+							</a>
+						</figure>
+						<figure>
+	
+							<a href="#">
+								<div class="roundedImage">
+									<img src="images/salade.jpg" alt="feuilles de salade">
+								</div>
+								<div class="productText">
+									<h4>Salade</h4>
+									<p>2€ / pièce</p>
+								</div>
+							</a>
+						</figure>
+						<figure>
+	
+							<a href="#">
+								<div class="roundedImage">
+									<img src="images/poireau.jpg" alt="tête de poireaux">
+								</div>
+								<div class="productText">
+									<h4>Poireaux</h4>
+									<p>3€ / botte</p>
+								</div>
+							</a>
+						</figure>
+						<figure>
+	
+							<a href="#">
+								<div class="roundedImage">
+									<img src="images/sauge.jpg" alt="plant de sauge">
+								</div>
+								<div class="productText">
+									<h4>Sauge</h4>
+									<p>2,70€ / bouquet</p>
+								</div>
+							</a>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</section>
 		
 	</main>
 
-	<footer>
+	<footer id="footer" class="marginSpace">
 		<div class="container">
 			<div class="logo">
 				<a href="#"><img id="logoFooter" src="images/logo-vectoriel.svg" alt="Logo de Mél'égumes"></a>
