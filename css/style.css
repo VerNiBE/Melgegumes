@@ -8,18 +8,12 @@
 
 html {
     font-size: 16px;
-    
 }
 
 body {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     margin: 0 auto;
-    /* margin-top: 10em;  */
-}
-
-section {
-    /* margin-bottom: 6em ; */
 }
 
 h1,h2,h3,h4 {
@@ -34,7 +28,6 @@ p {
 h1,.lignSecond h2{
     font-size: 1.2em;
     font-weight: 400;
-    /* padding: .5em 0; */
     text-transform: uppercase;
     color: #fff;
     margin: .5em 0 
@@ -62,23 +55,6 @@ h3 {
    
 }
 
-/* .containerGrid {
-    border: 1px solid red;
-    padding: 5px;
-}
-
-.module {
-    margin: 5px;
-    border: 1px solid greenyellow;
-}
-
-.box {
-    margin: 5px;
-    border: 1px solid blue;
-} */
-
-
-
 .visible {
     display: none;
 }
@@ -90,12 +66,6 @@ h3 {
 .marginSpace {
     margin-top: 18em;
 }
-
-/* .noMobile {
-    display: none;
-} */
-
-
 
 section::before { 
     display: block; 
@@ -120,7 +90,6 @@ section::before {
 /* ===============(1) Header ==================== */
 
 header {
-    /* display:none; */
     margin: 0;
     padding: 0;
     position: fixed;
@@ -152,8 +121,6 @@ header {
 
 #menuTop {
     background-color: #fff;
-    
-    /* width: 75vw; */
     box-shadow: 0em .1em .5em #c5c5c5;
     z-index: 100;
 }
@@ -162,14 +129,6 @@ header {
     width: 8em;
     margin: 1em auto;
 }
-
-/* #menuTop:hover {
-    background-color: rgba(0, 0, 0, .8);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-} */
 
 #menuTop ul {
     list-style: none;
@@ -220,12 +179,10 @@ header {
 
 .imageStart {
     position: relative;
-    /* background-color: #fff; */
     background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: bottom ;
     background-repeat: no-repeat;
-    /* transform: rotateY(180deg); */
     height: 100vh;
 }
 
@@ -234,13 +191,12 @@ header {
     background-color: rgba(0, 0, 0, .3);
     top: 7em;
     width: 100%;
-    /* transform: rotateY(180deg); */
+
 }
 
 .lignStart h1 {
     margin:.5em 0;
     font-size: 3em;
-    /* font-family: "raleway"; */
     font-weight: bold;
 }
 
@@ -320,23 +276,18 @@ figure .roundedImage {
     top: 0;
     right: -20%;
     width: 165%;
-    
-    /* height: auto; */
 }
 
 
 
 figure .productText {
-    /* position: absolute; */
     top: 15em;
     margin: 0 auto;
     margin-bottom: 2em;
-    /* position: absolute; */
     text-align: center;
 }
 .productText :nth-child(n) {
     margin: .5em 0;
-    /* padding: .5em 0; */
 }
 
 #product #gallery a,#galleryCommand a {
@@ -376,21 +327,14 @@ figure .productText {
 .switchPage h4::after {
     content: '';
     display: block;
-    /*margin: auto;*/
     height: 2px;
     width: 0;
     background: transparent;
-    /* transition: width .2s ease, background-color .2s ease; */
 }
 .switchPage h4:hover::after {
     width: 100%;
     background: #444;
 }
-
-
-/* #carotte {
-    transform: rotate(45deg);
-} */
 
 div .position {
     display: block;
@@ -427,7 +371,6 @@ div .position {
     
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     justify-content: space-around;
 
     list-style: none;
@@ -528,36 +471,6 @@ footer .logo {
 /* ===============(4) Media Queries ==================== */
 @media all and (min-width:425px) {
 
-
-
-    /* Si grid est actif enlever column si dessous */
-    /* .columnRight {
-        min-width: 50%;
-        
-        margin-right: 0; 
-    }
-    
-    .columnRight h3,.columnRight h4 {
-        text-align: end;
-        
-        
-        
-    }
-
-    .columnRight h3 {
-        padding-right: .8em;
-    }
-
-
-    .columnRight li {
-        display: block;
-        text-align: right;
-        text-decoration: none;
-        padding: .2em  .8em .2em 0 ;
-        margin-left: auto;
-        margin-right: 0;
-    } */
-
     h1,.lignSecond h2{
         font-size: 1.7em;
     }
@@ -574,7 +487,6 @@ footer .logo {
 
     .container {
         width: 85%;
-        /* margin: 0 auto; */
        
     }
 
@@ -588,7 +500,6 @@ footer .logo {
     }
 
     section::before {  
-        /* margin-top: -8em;  */
         height: 8em; 
 
     }
@@ -597,10 +508,6 @@ footer .logo {
       .columnRight {
         max-width: 60%; 
     }
-    
-    /* h3 {
-        margin-top: 6.25em;
-    } */
 
     /* ===============(/0) Base ==================== */
     /* ===============(1) Header ==================== */
@@ -610,7 +517,6 @@ footer .logo {
     }
 
     #menuTop ul {
-        /* width: 88vw; */
         padding: 0em;
         display: flex;
         justify-content: space-between;
@@ -649,7 +555,7 @@ footer .logo {
     
     .lignStart h1 {
         margin:.4em 0;
-        font-size: 7em;
+        font-size: 6em;
         font-weight: bold;
     }
     
@@ -670,10 +576,8 @@ footer .logo {
 
     .moduleLeft {
         display: grid;
-        /* border: 1px solid red; */
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 3em;
-        /* grid-template-rows: 1fr 1fr; */
         grid-template-areas:
             " title title "
             " left right" ;
@@ -689,10 +593,8 @@ footer .logo {
     }
     .moduleRight {
         display: grid;
-        /* border: 1px solid red; */
         grid-template-columns:  1fr 1fr;
         grid-column-gap: 3em;
-        /* grid-template-rows: 1fr 1fr; */
         grid-template-areas:
             " title title"
             " left right " ;
@@ -723,7 +625,6 @@ footer .logo {
     .moduleRight .title {
         grid-area: title;
         grid-column: 2 / span 1;
-  /* grid-row: third-line / 4; */
     }
 
     .moduleRight .left {
@@ -743,8 +644,6 @@ footer .logo {
 
     #product figure {
         margin: 1em;
-        /* max-width: 30%; */
-        /* float: left; */
     }
     
     #product svg {
@@ -775,6 +674,7 @@ footer .logo {
         margin-left:2%; 
         width: -webkit-fill-available; /*(chrome)*/
         width: -moz-available; /*(firefox)*/
+        width: 100%;
     }
     
 
@@ -782,21 +682,15 @@ footer .logo {
 
     .flexWrap {
         display: flex;
-        /* border: red 1px solid; */
-        /* justify-content: space-evenly; */
-        /* margin-top: 4em; */
     }
 
     #menuTop {
         display: flex;
-        /* align-items: flex-end; */
 
     }
 
     section::before {  
-        /* margin-top: -8em;  */
         height: 5em; 
-
     }
 
     /* ===============(/0) Base ==================== */
@@ -809,19 +703,15 @@ footer .logo {
     #menuTop ul li{
         display:inline-block;
         padding-top: 4.2em;
-        /* width: -webkit-fill-available; */
       }
       #menuTop li a {
           text-decoration:none;
           text-align: center;
-          /* font-size: 1.3em; */
           color: #444444;
-          /* text-transform: uppercase; */
       }
       #menuTop li a:after {
           content: '';
           display: block;
-          /*margin: auto;*/
           height: 2px;
           width: 0;
           background: transparent;
@@ -830,7 +720,6 @@ footer .logo {
       #menuTop li a:before {
           content: '';
           display: block;
-          /*margin: auto;*/
           height: 2px;
           width: 0;
           background: transparent;
@@ -855,10 +744,8 @@ footer .logo {
     .lignStart h1 {
         margin:.2em 0;
         font-size: 6em;
-        /* font-family: "raleway"; */
         font-weight: bold;
     }
-    
     
     #arrowDown{
         position: absolute;
@@ -879,23 +766,7 @@ footer .logo {
     #product img.first {
         margin-top: 0; 
     }
-    
-    #product a {
 
-        /* color: #fff; */
-    }
-
-    #product figure .roundedImage {
-        /* position: relative; */
-    }
-
-    /* figure span {
-        display: none;
-        position: absolute;
-        top: 25%;
-        right: -50%;
-        left: -50%;
-    } */
     #product figure a:hover  img{
         opacity: .5;
     }
@@ -928,6 +799,10 @@ footer .logo {
     .containerLegumes figure .productText {
         margin-bottom: 2em;
         text-align: center;
+    }
+
+    .containerPaniers label,.containerPaniers input {
+        cursor: pointer;
     }
 
     svg#arrowLeg {
@@ -970,7 +845,6 @@ div.formulaire {
 .containerPaniers {
     line-height: 1.4em; 
     list-style: none;
-    /* margin-left:10%;  */
 }
 
 .containerPaniers ul {
@@ -1000,6 +874,7 @@ div.formulaire {
     border:white 2px solid;
     border-radius: 30%;
     z-index: 10;
+    cursor: pointer;
 }
 
 #basket img:hover {
@@ -1027,7 +902,6 @@ div.formulaire {
    @media all and (min-width:425px) {
 
     .containerLegumes {
-        /* margin-left: 10%; */
         width:80%; 
     }
    }
