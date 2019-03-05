@@ -390,17 +390,7 @@ div .position {
    }
    #map {
     margin: 1em 1.8em 0 0;
-       width: 18em;
-       height: 18em;
-       overflow: hidden;
    }
-
-  #map img{
-    width: 120%;
-
-  }
-
-  #mapid { height: 180px; }
 
     #contact li {
         list-style: none;
@@ -768,7 +758,7 @@ footer .logo {
     }
 
     #product figure a:hover  img{
-        opacity: .5;
+        /* opacity: .5; */
     }
 
     #product figure a:hover figcaption {
