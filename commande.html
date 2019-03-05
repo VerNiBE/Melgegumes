@@ -371,18 +371,18 @@
 					<div class="formulaire borderLeft borderLignRed visible" id="formulaire">
 						<form method="post">
 							<p>
-								<label for="name">Votre nom :</label><br />
-								<input type="text" name="name" id="nom"/>
+								<label for="name" >Votre nom :</label><br />
+								<input type="text" name="name" id="nom" required>
 							</p>
 							<p>
-								<label for="mail">Votre e-mail :</label><br />
-								<input type="text" name="mail" id="mail" />
+								<label for="mail" >Votre e-mail :</label><br />
+								<input type="text" name="mail" id="mail" required>
 							</p>
 							<p>
 								<label for="commande">Votre commande :</label><br />
 								<textarea name="commande" id="commande" cols="30" rows="10"></textarea>
 							</p>
-							<input type="button" value="Envoyer" id="submit" class="button">
+							<input type="submit" value="Envoyer" id="submit" class="button">
 						</form>
 					</div>
 					<span class="backdropForm visible" id="backdropForm"></span>
@@ -400,7 +400,7 @@
 		
 						<h3>Quel type de panier désirez-vous ?</h3>
 						<ul class="borderLeft borderLignRed">
-							<li><label for="small">Petit panier</label><label for="name" class="prix">20 €</label><input type="radio" name="panier" id="small" checked></li>
+							<li><label for="small">Petit panier</label><label for="name" class="prix">20 €</label><input type="radio" name="panier" id="small"></li>
 							<li><label for="normal">Panier moyen</label><label for="name" class="prix">25 €</label><input type="radio" name="panier" id="normal"></li>
 							<li><label for="big">Grand panier</label><label for="name" class="prix">35 €</label><input type="radio" name="panier" id="big"></li>
 							<li><label for="random">Panier personnalisable</label><input type="radio" name="panier" id="random"></li>
@@ -441,7 +441,7 @@
 	
 							<a>
 								<div class="roundedImage">
-									<img src="images/bulle/potimaron.jpg" alt="petit potimaron">
+									<img src="images/bulle/potimarron.jpg" alt="petit potimarron">
 								</div>
 								<div class="productText">
 									<h4>Potimarron</h4>
@@ -513,7 +513,7 @@
 	
 							<a>
 								<div class="roundedImage">
-									<img src="images/bulle/poireau.jpg" alt="tête de poireaux">
+									<img src="images/bulle/poireaux.jpg" alt="tête de poireaux">
 								</div>
 								<div class="productText">
 									<h4>Poireaux</h4>

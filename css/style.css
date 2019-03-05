@@ -356,6 +356,7 @@ div .position {
     background-color: rgba(137, 88, 100, 1);
     border: 2px solid  rgba(137, 88, 100, 1) ;
     border-radius: 10px 10px 10px 10px;
+    transition: .2s;
     
   }
   .button:hover{
@@ -363,7 +364,7 @@ div .position {
     background-color: #fff;
     border: 2px solid  rgba(137, 88, 100, 1) ;
     text-align: center;
-    transition: .2s ease-in-out;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     
   }
 
@@ -850,7 +851,11 @@ div.formulaire {
     line-height: 3em;
 }
 
+/* @keyframes basket {
+    0%   {opacity: 0%;}
 
+    100% {opacity: 100%;}
+  } */
 
 #basket svg {
     position: fixed;
@@ -865,12 +870,19 @@ div.formulaire {
     border-radius: 30%;
     z-index: 10;
     cursor: pointer;
+    opacity: 1;
+    animation-name: basket;
+    animation-delay: 2.5s;
+    
 }
 
-#basket img:hover {
+#basket svg:hover {
     background-color:#fff;
+    fill: rgba(137, 88, 100, 1);
     border:rgba(137, 88, 100, 1) 2px solid;
+    
 }
+
 
 #galleryCommand {
     display: flex;
@@ -884,9 +896,8 @@ div.formulaire {
     left: 11em;
 }
 
-#footer {
-    position: relative;
-    z-index: 100000;
+#formulaire input.button{
+    -webkit-appearance: none;
 }
 
    @media all and (min-width:425px) {
@@ -927,7 +938,8 @@ div.formulaire {
         
     }
     #formulaire .button{
-        font-size: 1.3em; 
+        font-size: 1.3em;
+        
     }
 
 }

@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         document.getElementById("containerLegumes").classList.remove("invisible");
         document.getElementById("footer").classList.remove("marginSpace");
-        console.log("checked");
+        document.getElementById("commande").innerHTML = "Créer votre panier à partir de la liste sous les paniers";
+        console.log("checked-random");
         
     });
 
@@ -66,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         document.getElementById("containerLegumes").classList.add("invisible");
         document.getElementById("footer").classList.add("marginSpace");
+        document.getElementById("commande").innerHTML = "Je souhaite un grand panier a 35€ \n\nPour la date du :";
         console.log("checked-big");
     });
 
@@ -73,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         document.getElementById("containerLegumes").classList.add("invisible");
         document.getElementById("footer").classList.add("marginSpace");
+        document.getElementById("commande").innerHTML = "Je souhaite un panier moyen a 25€ \n\nPour la date du :";
         console.log("checked-normal");
     });
 
@@ -80,7 +83,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         document.getElementById("containerLegumes").classList.add("invisible");
         document.getElementById("footer").classList.add("marginSpace");
+        document.getElementById("commande").innerHTML = "Je souhaite un petit panier a 20€ \n\nPour la date du :";
         console.log("checked-small");
     });
+
+
 
 });
