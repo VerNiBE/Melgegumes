@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
             document.getElementById("containerLegumes").classList.remove("invisible");
             document.getElementById("footer").classList.remove("marginSpace");
-            document.getElementById("commande").innerHTML = "Créer votre panier grace à la liste sous les paniers\n\nPour la date du :";
+            document.getElementById("commande").innerHTML = "Je desire créer mon propre panier\n\nPour la date du :";
             
         });
     
