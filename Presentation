@@ -1,0 +1,37 @@
+Texte jury
+
+<!-- 1/ Les wireframes -->
+
+Suite au differents modules suivis, à la creations des zonnings, nous avons commencé les wireframes.
+Comme pour l'étape précédente nous avons préféré l'approche "mobile-first".
+
+<!-- A// Mobile -->
+
+Le principal problème rencontré ici fut de démarrer de maniere cohérente, "Titre image texte" c'est bien mais cela ne serait pas trop charger, lisible et instructif? Même avec nos objectifs et le moodboard à nos cotés, la tache pris du temps ceci étant nous y sommes arrivés et avons gagnés en expériences.
+
+
+<!-- B// Tablette -->
+
+Ensuite la version tablette, fils batard entre le mobile et le pc, apres plusieurs recherches sur le sujet, les tailles de devices possible, la longueur d'un texte avant d'etre lassant a lire, ainsi que leurs positionement. Nous arrivâmes a un compromis suffisament complet pour informer l'utilisateur et léger pour ne pas fatiguer ce dernier. Autres élements qui diverge de la version mobile sont les legumes présentés dans les produits, auparavant ces derniers etait disposé a la suite les un des autres, ici ils le sont en deux colonnes.
+
+<!-- C// Desktop -->
+
+Et enfin la desktop, pour etre franc, peu de chose on changer encore cette version et la tablette, à ceci près que la partie produits est agrementé d'une colonne suplémentaire.
+
+<!-- 2/ L'intergration -->
+
+C'est la que les romains s'empoignèrent, aillant donc les trois layouts, je démarra par la partie mobile, le plus difficile a mon sens fut de remettre chaque element a ça place, en respectant la sementique ni perturber le plus lors des differentes disposition selon le support.
+
+Ainsi que l'incoporation de diverse technique de positionnement comme le flex ou encore le grid.
+
+Autre élément qui est arrivé en cours de dévellopement, les fonctionnalités supplémentaires, comme par exemple : la barre de recherche, le systeme de commande, le calendrier complet, la page RGPD; qui avait été pensées en surface et qui sont devenues epineuses lors de l'intégration.
+
+<!-- 3/ Conclusion  -->
+
+Comme dis plus haut je resors satisfait, et la force d'avoir des profils differents ce fais sentir surtout dans des projets comme celui ci ou les competences, les affinités, mais aussi les caractères, la motivation et la rigueur.
+
+La coopération fut parfois compliquée, chacun aillant ca propre vision mais nous avons su passé outre pour le bien du projet.
+
+Notamment de mon coté j'ai du faire face a la folie créatrice de deux graphistes, aillant un bagage suffisant pour avoir un resultat que je pourrais qualifié de "correct", ils m'ont posés au dela de ce que j'aurais pu concevoir seul. 
+
+<!-- *Positive atitude* -->
