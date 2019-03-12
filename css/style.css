@@ -278,8 +278,6 @@ figure .roundedImage {
     width: 165%;
 }
 
-
-
 figure .productText {
     top: 15em;
     margin: 0 auto;
@@ -658,10 +656,10 @@ footer .logo {
     .button {
         font-size: 1.5em;
     }
-
-    .flexWrap {
+    #contact .flexWrap {
         display: flex;
     }
+
     /* ===============(/2) Main ==================== */
     /* ===============(3) Footer ==================== */
 
@@ -675,7 +673,6 @@ footer .logo {
     
     .container {
         max-width: 65em;
-       
     }
 
     nav {
@@ -768,10 +765,6 @@ footer .logo {
         margin-top: 0; 
     }
 
-    #product figure a:hover  img{
-        /* opacity: .5; */
-    }
-
     #product figure a:hover figcaption {
         display: block;
     }
@@ -784,6 +777,10 @@ footer .logo {
         width: 25em;
         height: 25em;
       }
+
+      .flexWrap {
+        display: flex;
+    }
     /* ===============(/2) Main ==================== */
     /* ===============(3) Footer ==================== */
 
