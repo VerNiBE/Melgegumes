@@ -459,11 +459,21 @@ footer .logo {
 /* ===============(/3) Footer ==================== */
 
 /* ===============(4) Media Queries ==================== */
+
+
+
+@media all and (min-width:375px) {
+    #product .listLegume ul {
+        margin-right: 13vw;
+    }
+}
 @media all and (min-width:425px) {
 
     h1,.lignSecond h2{
         font-size: 1.7em;
     }
+
+
 }
 
 
@@ -641,8 +651,16 @@ footer .logo {
         
     }
 
+    #product .listLegume ul {
+        margin-right: 5vw;
+    }
+
     .button {
         font-size: 1.5em;
+    }
+
+    .flexWrap {
+        display: flex;
     }
     /* ===============(/2) Main ==================== */
     /* ===============(3) Footer ==================== */
@@ -665,13 +683,6 @@ footer .logo {
         width: -webkit-fill-available; /*(chrome)*/
         width: -moz-available; /*(firefox)*/
         width: 100%;
-    }
-    
-
-
-
-    .flexWrap {
-        display: flex;
     }
 
     #menuTop {
